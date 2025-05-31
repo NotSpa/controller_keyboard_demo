@@ -1,34 +1,88 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1748529696
-icon.svg::CompressedTexture2D::4771321712294208622::1748529601::1748529608::1::::<><><>0<>0<>77317199fba9f0543297439c8a7dc3c5<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-::res://addons/::1748529696
+::res://::1748698784
+icon.svg::CompressedTexture2D/CompressedTexture2D::4771321712294208622::1748529601::1748529608::1::::<><><>0<>0<>77317199fba9f0543297439c8a7dc3c5<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+user_interface.tscn::PackedScene::5486537661294037098::1748529738::0::1::::<><><>0<>0<><>::
+::res://addons/::1748698466
+::res://addons/Alphabet_SVGs/::1748698467
+a (2).svg::CompressedTexture2D::7488366897020418938::1748528484::1748698869::1::::<><><>0<>0<>2433848f024d7bc9e6014e7792f32d9b<>res://.godot/imported/a (2).svg-4794f9060a6ec08aafc28084ddc488d9.ctex::
+A.svg::CompressedTexture2D::8889089473234250023::1748528468::1748698869::1::::<><><>0<>0<>d74675d97f37e29930b1e34e791ad735<>res://.godot/imported/A.svg-6dea031a54b7a15542fc73eff3ae7d2a.ctex::
+b (2).svg::CompressedTexture2D::9135585482917648911::1748528484::1748698869::1::::<><><>0<>0<>6ff45a8ba7acffe75864b708ac92b1ed<>res://.godot/imported/b (2).svg-1d52b7668ef9837fdb41dd39665e056e.ctex::
+B.svg::CompressedTexture2D::4320175495696917327::1748528468::1748698869::1::::<><><>0<>0<>65b1a11f2bf1722e47b343ebfbb7875f<>res://.godot/imported/B.svg-c487059925d6d3bfc84d10d07e8b9a65.ctex::
+c (2).svg::CompressedTexture2D::8572237260227301218::1748528484::1748698869::1::::<><><>0<>0<>ef3b18947273a955a0fdfae910e51b41<>res://.godot/imported/c (2).svg-c38f629a723d49461e786aff30a6944c.ctex::
+C.svg::CompressedTexture2D::5444091499020350138::1748528468::1748698869::1::::<><><>0<>0<>84bb2b6f89443d59b49ec0baf48403ff<>res://.godot/imported/C.svg-507b60b37dac208a299819c2d03c2f15.ctex::
+d (2).svg::CompressedTexture2D::5826035404291939459::1748528484::1748698869::1::::<><><>0<>0<>06c58c446977653b85ce17139d6717fd<>res://.godot/imported/d (2).svg-2f75cc6208611e1ae4968ce680662a56.ctex::
+D.svg::CompressedTexture2D::953722677885470148::1748528468::1748698869::1::::<><><>0<>0<>d488d104d46829db1266a962592fcd92<>res://.godot/imported/D.svg-f5c1e1e5cff3bdb787106bf3b7a26fa6.ctex::
+e (2).svg::CompressedTexture2D::3997779252404936937::1748528484::1748698869::1::::<><><>0<>0<>9ac8c8479667e608643f0a755892fa01<>res://.godot/imported/e (2).svg-d658bf688cf8ba0cfe3a19426a9b321e.ctex::
+E.svg::CompressedTexture2D::2243929447185220885::1748528468::1748698869::1::::<><><>0<>0<>c0b4a90236a4878e943ab329d34b7222<>res://.godot/imported/E.svg-22248bd711c5359d3ea1e25c0371f659.ctex::
+f (2).svg::CompressedTexture2D::3276384136796741592::1748528484::1748698869::1::::<><><>0<>0<>812963848b9b25f71816b6ca2d574ae0<>res://.godot/imported/f (2).svg-a4c7d9605300d81a8b50eecf07df57cd.ctex::
+F.svg::CompressedTexture2D::8193009842177696560::1748528468::1748698869::1::::<><><>0<>0<>9faa5d0c049c0a440a54438853980381<>res://.godot/imported/F.svg-03ff25f8e957718fdb680b4ffd2f9d0b.ctex::
+g (2).svg::CompressedTexture2D::3763362939015095449::1748528484::1748698869::1::::<><><>0<>0<>5b1aad8224fd3e0774e748d34bdf248c<>res://.godot/imported/g (2).svg-0b69a29f517159ac5d0b5df804af4d2e.ctex::
+G.svg::CompressedTexture2D::8289403510390192492::1748528468::1748698869::1::::<><><>0<>0<>7eb9e702d8543d1114fbe3e86088524c<>res://.godot/imported/G.svg-b4218ba7696747129b6df5146289d6c9.ctex::
+h (2).svg::CompressedTexture2D::928979526293838480::1748528484::1748698869::1::::<><><>0<>0<>55de1a1a7c69a4d568f32597c743af52<>res://.godot/imported/h (2).svg-a327e02de270bcab0d1ee032451d42c9.ctex::
+H.svg::CompressedTexture2D::7763899480185753281::1748528468::1748698869::1::::<><><>0<>0<>cc1177f6c9608a6a4ff47cd0b5c1c176<>res://.godot/imported/H.svg-c75d7edaecede48f60ac37d87583f38e.ctex::
+i (2).svg::CompressedTexture2D::4767419128996283733::1748528484::1748698869::1::::<><><>0<>0<>b694dddb213ca7cbcf196fa4eb603eee<>res://.godot/imported/i (2).svg-354e294b21818216ec84615a5f68d2ce.ctex::
+I.svg::CompressedTexture2D::6310403596129839337::1748528468::1748698869::1::::<><><>0<>0<>f8355f9ba53d74af7e26040d49260e3a<>res://.godot/imported/I.svg-d538d25b6b57e1e05ff4ee2e1dd7accd.ctex::
+j (2).svg::CompressedTexture2D::7207529306274112732::1748528484::1748698869::1::::<><><>0<>0<>caa7f46b929f3c90dcaf0ca8fc251e15<>res://.godot/imported/j (2).svg-5c510bb3b85f13205447d756ed4286e6.ctex::
+J.svg::CompressedTexture2D::3071367966589039529::1748528468::1748698869::1::::<><><>0<>0<>e4665e839f5a1134c63bf6d651ff0217<>res://.godot/imported/J.svg-f91e31da74399794b89008e12defa1e5.ctex::
+k (2).svg::CompressedTexture2D::5308125998433550349::1748528484::1748698869::1::::<><><>0<>0<>1a6732b67d878f0848925bf5a79b1597<>res://.godot/imported/k (2).svg-9f86c669b8b08fc4089f86e77f0835c7.ctex::
+K.svg::CompressedTexture2D::6412963534329846992::1748528468::1748698869::1::::<><><>0<>0<>1daa412a0c813a69d112ba9fc1aec837<>res://.godot/imported/K.svg-bf0be190d96f38bffc3890c3800f1d1c.ctex::
+l (2).svg::CompressedTexture2D::6611428678812826033::1748528484::1748698869::1::::<><><>0<>0<>461494b6ba66d8b09448a22ea1c6494e<>res://.godot/imported/l (2).svg-08b7c1ff1c0827788a75a2bf7bb3b47d.ctex::
+L.svg::CompressedTexture2D::149707311963026989::1748528468::1748698869::1::::<><><>0<>0<>a0cf46e9c53ccb47767f54d9d895c782<>res://.godot/imported/L.svg-85ef7fd223e2c43958bde6405726901b.ctex::
+m (2).svg::CompressedTexture2D::5667689299350514973::1748528484::1748698869::1::::<><><>0<>0<>34e8a21cade1825a8893895569943875<>res://.godot/imported/m (2).svg-b25c7b3ae25a75c293e986df1731928d.ctex::
+M.svg::CompressedTexture2D::6485623538868647325::1748528468::1748698869::1::::<><><>0<>0<>af7f9259b8378cdb56714dc8f045bd97<>res://.godot/imported/M.svg-eb1e8ae1e367e40ca0c1486620d67678.ctex::
+n (2).svg::CompressedTexture2D::8130022226487499592::1748528484::1748698869::1::::<><><>0<>0<>75fa1ed24ed4786bc92ba63c2cef9c80<>res://.godot/imported/n (2).svg-abb6ec88e8713b755bddbc605796712d.ctex::
+N.svg::CompressedTexture2D::444116380708302036::1748528468::1748698869::1::::<><><>0<>0<>9b51d359497424fee6b6bd45fa7377e2<>res://.godot/imported/N.svg-aa6a3feeac53f07a576d597adcc20b7a.ctex::
+o (2).svg::CompressedTexture2D::4676376479327635656::1748528484::1748698869::1::::<><><>0<>0<>f40fd332cc138a3a78baf2c2705a6872<>res://.godot/imported/o (2).svg-92bbbb39fc1e5ec05eb94f2c39b04921.ctex::
+O.svg::CompressedTexture2D::1366307447637854870::1748528468::1748698869::1::::<><><>0<>0<>c2f79902a59bdda9ec5650f110a535fe<>res://.godot/imported/O.svg-2dca412293bd111494e7176077f6788e.ctex::
+p (2).svg::CompressedTexture2D::7931946113068038827::1748528484::1748698869::1::::<><><>0<>0<>049358186bc29b9993e0349f4853711a<>res://.godot/imported/p (2).svg-f4cd03cbc0e1377ac5307cd5e04794d0.ctex::
+P.svg::CompressedTexture2D::6169431000636286156::1748528468::1748698869::1::::<><><>0<>0<>7b23b6ea22222cef1c43377d040928eb<>res://.godot/imported/P.svg-391438d333ee49a16999735d4f78abe7.ctex::
+q (2).svg::CompressedTexture2D::2526689846194252897::1748528484::1748698869::1::::<><><>0<>0<>09d212289f36a7eec34ec4eda2e848cd<>res://.godot/imported/q (2).svg-511f9938f98abe448aad4c77037603ee.ctex::
+Q.svg::CompressedTexture2D::3266640576333295579::1748528468::1748698869::1::::<><><>0<>0<>fedef1a6895b77341b6ba96e790d20bf<>res://.godot/imported/Q.svg-b8b5609ec905002b6845d06fdf9fdbe4.ctex::
+r (2).svg::CompressedTexture2D::2440473175792364041::1748528484::1748698869::1::::<><><>0<>0<>7752fbb96695af46ce404d423fbf719a<>res://.godot/imported/r (2).svg-95e0d012d8ab6d705cb15b6797a5b353.ctex::
+R.svg::CompressedTexture2D::6783510612482246929::1748528468::1748698869::1::::<><><>0<>0<>8f3260a91bd15d293358f90b58f85a7b<>res://.godot/imported/R.svg-7acaa739243b1325b85507b7ff5c9bf5.ctex::
+s (2).svg::CompressedTexture2D::2516304446740046443::1748528484::1748698869::1::::<><><>0<>0<>e9d6339a5aa63a74de6f19eb299de25f<>res://.godot/imported/s (2).svg-b6cac5607696f68117c60893ef78781b.ctex::
+S.svg::CompressedTexture2D::5254445709625897890::1748528468::1748698869::1::::<><><>0<>0<>18e722e3fe7dd9ff03f66a11a8eda0ce<>res://.godot/imported/S.svg-b89c310166376d9ca9411302328d0e0c.ctex::
+t (2).svg::CompressedTexture2D::8793650247278686654::1748528485::1748698869::1::::<><><>0<>0<>c7af9769bfd37bd9a1238faf6efc337a<>res://.godot/imported/t (2).svg-e031f0db6f9e79a2e238cfe738781578.ctex::
+T.svg::CompressedTexture2D::7546849069150724229::1748528468::1748698869::1::::<><><>0<>0<>dcf720f64bc0e7149fb7bbfe7b37f15c<>res://.godot/imported/T.svg-a7c660a82865ea83eb61918800228262.ctex::
+u (2).svg::CompressedTexture2D::4647050107277775001::1748528485::1748698869::1::::<><><>0<>0<>8c48a890a410245dd0825a6fc3c5fc79<>res://.godot/imported/u (2).svg-af50323af4c5d144cc89467da351ff1d.ctex::
+U.svg::CompressedTexture2D::599700369519233263::1748528468::1748698869::1::::<><><>0<>0<>a13e65f89a9be26b8481b76b8900e15b<>res://.godot/imported/U.svg-4c4c21fa24ed78b726eb37f7bf017a6e.ctex::
+v (2).svg::CompressedTexture2D::7179140030711903368::1748528485::1748698869::1::::<><><>0<>0<>f27318c364e266b500782d0f583f484f<>res://.godot/imported/v (2).svg-ebb65daaf52b8529d7d2457253d9f0f1.ctex::
+V.svg::CompressedTexture2D::3849299350781957631::1748528468::1748698869::1::::<><><>0<>0<>855061aba02bcb6ea807fc58fbfd8bdc<>res://.godot/imported/V.svg-5266be30b76e040e13cf0ad4e1e69980.ctex::
+w (2).svg::CompressedTexture2D::7605201882520227207::1748528485::1748698869::1::::<><><>0<>0<>e48dc7c1cbce23b9a3d00e54fc8fe621<>res://.godot/imported/w (2).svg-9ed924fd892a722f6943e8978e61b0f4.ctex::
+W.svg::CompressedTexture2D::7785973343702621118::1748528468::1748698869::1::::<><><>0<>0<>e4a30b855184b802667c2484207e05c6<>res://.godot/imported/W.svg-1a9202cadb43c418696bffbabaffe7ca.ctex::
+x (2).svg::CompressedTexture2D::2250692828248198683::1748528485::1748698869::1::::<><><>0<>0<>aa303a8863b399de14db7177ab313aa5<>res://.godot/imported/x (2).svg-6ced23a3be635caaf2c973ae0310f1e6.ctex::
+X.svg::CompressedTexture2D::1235548970766343419::1748528468::1748698869::1::::<><><>0<>0<>9c55fd5004e392bd75775af9a1b007f9<>res://.godot/imported/X.svg-0748c4234a7c657c209d265d2fd68b6a.ctex::
+y (2).svg::CompressedTexture2D::8591752755820926658::1748528485::1748698869::1::::<><><>0<>0<>4485c498e82e07e44d0ba2b460aac7e5<>res://.godot/imported/y (2).svg-0eb0c44b53d0f2cd35642e43942ef675.ctex::
+Y.svg::CompressedTexture2D::2340010195933408465::1748528468::1748698869::1::::<><><>0<>0<>4893fdb371af68ac8ae7c6b95569c6f4<>res://.godot/imported/Y.svg-9d923d4c072d343fb14a4b5390a47a65.ctex::
+z (2).svg::CompressedTexture2D::8159068241213253217::1748528485::1748698869::1::::<><><>0<>0<>f63dcadc372dd1d9297e5f947d3faade<>res://.godot/imported/z (2).svg-a371cb53bb42049ab6504cfe6d0eb007.ctex::
+Z.svg::CompressedTexture2D::7655463869897872322::1748528468::1748698869::1::::<><><>0<>0<>2439d2ab883025d32eb2007e95bd0af5<>res://.godot/imported/Z.svg-b44d9d7e290a9faa283d2267de5a77fb.ctex::
 ::res://addons/RadialMenu/::1748529696
-dark_default_theme.tres::Theme::2216483075487570136::1748524029::0::1::::<><><>0<>0<><>::uid://cy0wcmq53hail::::res://addons/RadialMenu/icons/InterpLinear.svg
-drawing_library.gd::GDScript::6598546301674628901::1748524030::0::1::::<>Object<><>0<>0<><>::
-light_default_theme.tres::Theme::-1::1748524030::0::1::::<><><>0<>0<><>::res://addons/RadialMenu/icons/InterpLinear.svg
-plugin.cfg::TextFile::-1::1748524030::0::1::::<><><>0<>0<><>::
-RadialMenu.gd::GDScript::1621404279019593805::1748524029::0::1::::<>Control<><>0<>1<><>::
-RadialMenu.tscn::PackedScene::591362466413472711::1748524540::0::1::::<><><>0<>0<><>::uid://xdoj6cp71nv6::::res://addons/RadialMenu/RadialMenu.gd
-radial_menu_plugin.gd::GDScript::291450516711337876::1748524030::0::1::::<>EditorPlugin<><>0<>1<><>::
-::res://addons/RadialMenu/Demo/::1748529696
-RadialDemo1.gd::GDScript::7459744558871658305::1748524030::0::1::::<>ColorRect<><>0<>0<><>::
-RadialDemo1.tscn::PackedScene::6269084266433328076::1748524540::0::1::::<><><>0<>0<><>::uid://xdoj6cp71nv6::::res://addons/RadialMenu/RadialMenu.gd<>uid://dejs5x4uqg7j6::::res://addons/RadialMenu/Demo/RadialDemo1.gd
-RadialDemo2.gd::GDScript::8462784524134381913::1748524030::0::1::::<>Node<><>0<>0<><>::
-RadialDemo2.tscn::PackedScene::2329130619881288665::1748524540::0::1::::<><><>0<>0<><>::uid://dsto3blngkthp::::res://addons/RadialMenu/Demo/RadialDemo2.gd<>uid://iopwhmejcr8b::::res://addons/RadialMenu/RadialMenu.tscn<>res://addons/RadialMenu/light_default_theme.tres
-RadialDemo3.gd::GDScript::7775325962609000070::1748524030::0::1::::<>PanelContainer<><>0<>0<><>::
-RadialDemo3.tscn::PackedScene::6210452333607528940::1748524906::0::1::::<><><>0<>0<><>::uid://di1oqn5xto5ly::::res://addons/RadialMenu/Demo/RadialDemo3.gd<>uid://iopwhmejcr8b::::res://addons/RadialMenu/RadialMenu.tscn<>uid://p5t5nn8jiai1::::res://addons/RadialMenu/Demo/Rock_02_CGBookcase.jpg
-Rock_02_CGBookcase.jpg::CompressedTexture2D::1115971888269708762::1748524030::1748529701::1::::<><><>0<>0<>0b68e16fb6ab8a2ddd323ffd6970e17b<>res://.godot/imported/Rock_02_CGBookcase.jpg-1321ac250f12c198a00b6a3d19c925f3.ctex::
-::res://addons/RadialMenu/Demo/icons/::1748529696
-2D.svg::CompressedTexture2D::3773709304876827586::1748524030::1748529701::1::::<><><>0<>0<>e163252d1d1d0ac25f5fe3ce37d68ea3<>res://.godot/imported/2D.svg-90a3775b7e7e6d3392c2b183fe4c8f2c.ctex::
-CoordinateOrigin.svg::CompressedTexture2D::7589978477250470691::1748524030::1748529701::1::::<><><>0<>0<>5110c7c86e0d90da78a9246a56deb7e1<>res://.godot/imported/CoordinateOrigin.svg-cf39e1467fa5663a9ccc6d857e054818.ctex::
-Grid.svg::CompressedTexture2D::5405388234894238337::1748524030::1748529701::1::::<><><>0<>0<>f8c13a2d42d2b042c9ecb0f657316957<>res://.godot/imported/Grid.svg-5239aefea6bff664919978839651b8d0.ctex::
-PointMesh.svg::CompressedTexture2D::6232544517242073744::1748524030::1748529701::1::::<><><>0<>0<>6e5df7e681d497aec404312a109cfd62<>res://.godot/imported/PointMesh.svg-ea6ec6847e0a1bf4fb861d1be527e82e.ctex::
-Tools.svg::CompressedTexture2D::261836142577627796::1748524030::1748529701::1::::<><><>0<>0<>2cf010722be38a02d86a818603369388<>res://.godot/imported/Tools.svg-ad38d42cd832b8c752f340c03017b45b.ctex::
-Zoom.svg::CompressedTexture2D::6710439108544167891::1748524030::1748529701::1::::<><><>0<>0<>dce18b8bdac74924ac6fefb19e648b39<>res://.godot/imported/Zoom.svg-33a3acb460690064cdc61a1e6d16f7d6.ctex::
-::res://addons/RadialMenu/icons/::1748529696
-Back.svg::CompressedTexture2D::7449206876174727007::1748524030::1748529701::1::::<><><>0<>0<>60f782e1748e800ed8f9935ff1d76cc4<>res://.godot/imported/Back.svg-20e9dea8164def1a7b7c3a41200ffb2e.ctex::
-Close.svg::CompressedTexture2D::5717906265774543036::1748524030::1748529701::1::::<><><>0<>0<>54a3632be02596f86a5c393e05cf9cfe<>res://.godot/imported/Close.svg-44c806f647affe4a5624c6cb87f3d4e5.ctex::
-Favorites.svg::CompressedTexture2D::7551606390850659747::1748524030::1748529701::1::::<><><>0<>0<>9c485b1057d78c758b2f5dce8667a707<>res://.godot/imported/Favorites.svg-55552035e51929d5bfc53665aa8a0c2e.ctex::
-icon.png::CompressedTexture2D::7635620635395329245::1748524030::1748529701::1::::<><><>0<>0<>5596322813065c5ca54b4f52b0107505<>res://.godot/imported/icon.png-f37b1deb09d654ca3cabbd194790d1ce.ctex::
-InterpLinear.svg::CompressedTexture2D::151043194593602425::1748524030::1748529701::1::::<><><>0<>0<>b0f45618baf57ac752bd58b91985956e<>res://.godot/imported/InterpLinear.svg-c7b49d11ba841a9d9aa2809c2936f225.ctex::
-radial_menu.svg::CompressedTexture2D::301681511054616096::1748524030::1748529701::1::::<><><>0<>0<>e6f213ae4115ca3b121272eec8a3a80d<>res://.godot/imported/radial_menu.svg-85b5a51405d781a943d446d224219141.ctex::
+dark_default_theme.tres::Theme/Theme::2216483075487570136::1748524029::0::1::::<><><>0<>0<><>::uid://cy0wcmq53hail::::res://addons/RadialMenu/icons/InterpLinear.svg
+drawing_library.gd::GDScript/GDScript::6598546301674628901::1748524030::0::1::::<>Object<><>0<>0<><>::
+light_default_theme.tres::Theme/Theme::-1::1748524030::0::1::::<><><>0<>0<><>::res://addons/RadialMenu/icons/InterpLinear.svg
+plugin.cfg::TextFile/TextFile::-1::1748524030::0::1::::<><><>0<>0<><>::
+RadialMenu.gd::GDScript/GDScript::1621404279019593805::1748524029::0::1::::<>Control<><>0<>1<><>::
+RadialMenu.tscn::PackedScene/PackedScene::591362466413472711::1748524540::0::1::::<><><>0<>0<><>::uid://xdoj6cp71nv6::::res://addons/RadialMenu/RadialMenu.gd
+radial_menu_plugin.gd::GDScript/GDScript::291450516711337876::1748524030::0::1::::<>EditorPlugin<><>0<>1<><>::
+::res://addons/RadialMenu/Demo/::1748529701
+RadialDemo1.gd::GDScript/GDScript::7459744558871658305::1748524030::0::1::::<>ColorRect<><>0<>0<><>::
+RadialDemo1.tscn::PackedScene/PackedScene::6269084266433328076::1748524540::0::1::::<><><>0<>0<><>::uid://xdoj6cp71nv6::::res://addons/RadialMenu/RadialMenu.gd<>uid://dejs5x4uqg7j6::::res://addons/RadialMenu/Demo/RadialDemo1.gd
+RadialDemo2.gd::GDScript/GDScript::8462784524134381913::1748524030::0::1::::<>Node<><>0<>0<><>::
+RadialDemo2.tscn::PackedScene/PackedScene::2329130619881288665::1748524540::0::1::::<><><>0<>0<><>::uid://dsto3blngkthp::::res://addons/RadialMenu/Demo/RadialDemo2.gd<>uid://iopwhmejcr8b::::res://addons/RadialMenu/RadialMenu.tscn<>res://addons/RadialMenu/light_default_theme.tres
+RadialDemo3.gd::GDScript/GDScript::7775325962609000070::1748524030::0::1::::<>PanelContainer<><>0<>0<><>::
+RadialDemo3.tscn::PackedScene/PackedScene::6210452333607528940::1748524906::0::1::::<><><>0<>0<><>::uid://di1oqn5xto5ly::::res://addons/RadialMenu/Demo/RadialDemo3.gd<>uid://iopwhmejcr8b::::res://addons/RadialMenu/RadialMenu.tscn<>uid://p5t5nn8jiai1::::res://addons/RadialMenu/Demo/Rock_02_CGBookcase.jpg
+Rock_02_CGBookcase.jpg::CompressedTexture2D/CompressedTexture2D::1115971888269708762::1748524030::1748529701::1::::<><><>0<>0<>0b68e16fb6ab8a2ddd323ffd6970e17b<>res://.godot/imported/Rock_02_CGBookcase.jpg-1321ac250f12c198a00b6a3d19c925f3.ctex::
+::res://addons/RadialMenu/Demo/icons/::1748529701
+2D.svg::CompressedTexture2D/CompressedTexture2D::3773709304876827586::1748524030::1748529701::1::::<><><>0<>0<>e163252d1d1d0ac25f5fe3ce37d68ea3<>res://.godot/imported/2D.svg-90a3775b7e7e6d3392c2b183fe4c8f2c.ctex::
+CoordinateOrigin.svg::CompressedTexture2D/CompressedTexture2D::7589978477250470691::1748524030::1748529701::1::::<><><>0<>0<>5110c7c86e0d90da78a9246a56deb7e1<>res://.godot/imported/CoordinateOrigin.svg-cf39e1467fa5663a9ccc6d857e054818.ctex::
+Grid.svg::CompressedTexture2D/CompressedTexture2D::5405388234894238337::1748524030::1748529701::1::::<><><>0<>0<>f8c13a2d42d2b042c9ecb0f657316957<>res://.godot/imported/Grid.svg-5239aefea6bff664919978839651b8d0.ctex::
+PointMesh.svg::CompressedTexture2D/CompressedTexture2D::6232544517242073744::1748524030::1748529701::1::::<><><>0<>0<>6e5df7e681d497aec404312a109cfd62<>res://.godot/imported/PointMesh.svg-ea6ec6847e0a1bf4fb861d1be527e82e.ctex::
+Tools.svg::CompressedTexture2D/CompressedTexture2D::261836142577627796::1748524030::1748529701::1::::<><><>0<>0<>2cf010722be38a02d86a818603369388<>res://.godot/imported/Tools.svg-ad38d42cd832b8c752f340c03017b45b.ctex::
+Zoom.svg::CompressedTexture2D/CompressedTexture2D::6710439108544167891::1748524030::1748529701::1::::<><><>0<>0<>dce18b8bdac74924ac6fefb19e648b39<>res://.godot/imported/Zoom.svg-33a3acb460690064cdc61a1e6d16f7d6.ctex::
+::res://addons/RadialMenu/icons/::1748529701
+Back.svg::CompressedTexture2D/CompressedTexture2D::7449206876174727007::1748524030::1748529701::1::::<><><>0<>0<>60f782e1748e800ed8f9935ff1d76cc4<>res://.godot/imported/Back.svg-20e9dea8164def1a7b7c3a41200ffb2e.ctex::
+Close.svg::CompressedTexture2D/CompressedTexture2D::5717906265774543036::1748524030::1748529701::1::::<><><>0<>0<>54a3632be02596f86a5c393e05cf9cfe<>res://.godot/imported/Close.svg-44c806f647affe4a5624c6cb87f3d4e5.ctex::
+Favorites.svg::CompressedTexture2D/CompressedTexture2D::7551606390850659747::1748524030::1748529701::1::::<><><>0<>0<>9c485b1057d78c758b2f5dce8667a707<>res://.godot/imported/Favorites.svg-55552035e51929d5bfc53665aa8a0c2e.ctex::
+icon.png::CompressedTexture2D/CompressedTexture2D::7635620635395329245::1748524030::1748529701::1::::<><><>0<>0<>5596322813065c5ca54b4f52b0107505<>res://.godot/imported/icon.png-f37b1deb09d654ca3cabbd194790d1ce.ctex::
+InterpLinear.svg::CompressedTexture2D/CompressedTexture2D::151043194593602425::1748524030::1748529701::1::::<><><>0<>0<>b0f45618baf57ac752bd58b91985956e<>res://.godot/imported/InterpLinear.svg-c7b49d11ba841a9d9aa2809c2936f225.ctex::
+radial_menu.svg::CompressedTexture2D/CompressedTexture2D::301681511054616096::1748524030::1748529701::1::::<><><>0<>0<>e6f213ae4115ca3b121272eec8a3a80d<>res://.godot/imported/radial_menu.svg-85b5a51405d781a943d446d224219141.ctex::
