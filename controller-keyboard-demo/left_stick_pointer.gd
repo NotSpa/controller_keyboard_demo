@@ -27,3 +27,33 @@ func _process(delta: float):
 	
 func _physics_process(delta: float):
 	move_and_collide(move_input * speed)
+
+func _on_area_2d_area_entered(area: Area2D) -> void:
+	if area.is_in_group("U"):
+		print("U")
+	elif area.is_in_group("P"):
+		print("P")
+	elif area.is_in_group("G"):
+		print("G")
+	elif area.is_in_group("H"):
+		print("H")
+	elif area.is_in_group("J"):
+		print("J")
+	elif area.is_in_group("K"):
+		print("K")
+	elif area.is_in_group("L"):
+		print("L")
+	elif area.is_in_group("V"):
+		print("V")
+	elif area.is_in_group("B"):
+		print("B")
+	elif area.is_in_group("N"):
+		print("N")
+	elif area.is_in_group("M"):
+		print("M")
+	elif area.is_in_group("I"):
+		print("I")
+	elif area.is_in_group("O"):
+		print("O")
+	elif area.is_in_group("submit"):
+		print("submit")

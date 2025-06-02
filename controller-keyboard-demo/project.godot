@@ -20,6 +20,26 @@ config/icon="res://icon.svg"
 window/size/viewport_width=2048
 window/size/viewport_height=1080
 
+[global_group]
+
+radial_menu=""
+cursor=""
+user_interfaced=""
+B=""
+G=""
+H=""
+I=""
+J=""
+K=""
+L=""
+M=""
+N=""
+O=""
+P=""
+U=""
+V=""
+submit=""
+
 [input]
 
 left_stick_up={
@@ -62,3 +82,8 @@ right_stick_left={
 "events": [Object(InputEventJoypadMotion,"resource_local_to_scene":false,"resource_name":"","device":-1,"axis":2,"axis_value":-1.0,"script":null)
 ]
 }
+
+[layer_names]
+
+2d_physics/layer_1="Cursors"
+2d_physics/layer_2="Keys"
