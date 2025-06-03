@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 @onready var parent = $".."
 
-const speed = 100.0
+const speed = 50.0
 
 @export var max_length = 200.0
 @export var move_deadzone = 0.32
@@ -33,7 +33,7 @@ func _process(delta: float):
 			global_position.y = parent.global_position.y + sin(angle) * max_length
 			cursor_pos = global_position
 	else:
-		global_position = lerp(global_position, parent.global_position, delta * 20)
+		global_position = lerp(global_position, parent.global_position, delta * 10)
 		cursor_pos = global_position
 	
 func _physics_process(delta: float):
@@ -41,30 +41,82 @@ func _physics_process(delta: float):
 
 func _on_area_2d_area_entered(area: Area2D) -> void:
 	if area.is_in_group("U"):
+		$"../Area2D/RadialMenuPart1".self_modulate = Color(0,0,1,0.5)
 		print("U")
 	elif area.is_in_group("P"):
+		$"../Area2D4/RadialMenuPart4".self_modulate = Color(0,0,1,0.5)
 		print("P")
 	elif area.is_in_group("G"):
+		$"../Area2D5/RadialMenuPart5".self_modulate = Color(0,0,1,0.5)
 		print("G")
 	elif area.is_in_group("H"):
+		$"../Area2D6/RadialMenuPart6".self_modulate = Color(0,0,1,0.5)
 		print("H")
 	elif area.is_in_group("J"):
+		$"../Area2D7/RadialMenuPart8".self_modulate = Color(0,0,1,0.5)
 		print("J")
 	elif area.is_in_group("K"):
+		$"../Area2D8/RadialMenuPart7".self_modulate = Color(0,0,1,0.5)
 		print("K")
 	elif area.is_in_group("L"):
+		$"../Area2D9/RadialMenuPart9".self_modulate = Color(0,0,1,0.5)
 		print("L")
 	elif area.is_in_group("V"):
+		$"../Area2D10/RadialMenuPart10".self_modulate = Color(0,0,1,0.5)
 		print("V")
 	elif area.is_in_group("B"):
+		$"../Area2D11/RadialMenuPart11".self_modulate = Color(0,0,1,0.5)
 		print("B")
 	elif area.is_in_group("N"):
+		$"../Area2D12/RadialMenuPart12".self_modulate = Color(0,0,1,0.5)
 		print("N")
 	elif area.is_in_group("M"):
+		$"../Area2D13/RadialMenuPart13".self_modulate = Color(0,0,1,0.5)
 		print("M")
 	elif area.is_in_group("I"):
+		$"../Area2D2/RadialMenuPart2".self_modulate = Color(0,0,1,0.5)
 		print("I")
 	elif area.is_in_group("O"):
+		$"../Area2D3/RadialMenuPart3".self_modulate = Color(0,0,1,0.5)
 		print("O")
-	elif area.is_in_group("submit"):
-		print("submit")
+
+
+func _on_area_2d_area_exited(area: Area2D) -> void:
+	if area.is_in_group("U"):
+		$"../Area2D/RadialMenuPart1".self_modulate = Color(1,1,1)
+
+	elif area.is_in_group("P"):
+		$"../Area2D4/RadialMenuPart4".self_modulate = Color(1,1,1)
+
+	elif area.is_in_group("G"):
+		$"../Area2D5/RadialMenuPart5".self_modulate = Color(1,1,1)
+
+	elif area.is_in_group("H"):
+		$"../Area2D6/RadialMenuPart6".self_modulate = Color(1,1,1)
+
+	elif area.is_in_group("J"):
+		$"../Area2D7/RadialMenuPart8".self_modulate = Color(1,1,1)
+
+	elif area.is_in_group("K"):
+		$"../Area2D8/RadialMenuPart7".self_modulate = Color(1,1,1)
+
+	elif area.is_in_group("L"):
+		$"../Area2D9/RadialMenuPart9".self_modulate = Color(1,1,1)
+
+	elif area.is_in_group("V"):
+		$"../Area2D10/RadialMenuPart10".self_modulate = Color(1,1,1)
+
+	elif area.is_in_group("B"):
+		$"../Area2D11/RadialMenuPart11".self_modulate = Color(1,1,1)
+
+	elif area.is_in_group("N"):
+		$"../Area2D12/RadialMenuPart12".self_modulate = Color(1,1,1)
+
+	elif area.is_in_group("M"):
+		$"../Area2D13/RadialMenuPart13".self_modulate = Color(1,1,1)
+
+	elif area.is_in_group("I"):
+		$"../Area2D2/RadialMenuPart2".self_modulate = Color(1,1,1)
+
+	elif area.is_in_group("O"):
+		$"../Area2D3/RadialMenuPart3".self_modulate = Color(1,1,1)
