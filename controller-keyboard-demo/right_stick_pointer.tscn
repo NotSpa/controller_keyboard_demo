@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://bgud8c3oiyiuk" path="res://addons/pointer_right.svg" id="1_gbtni"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_gbtni"]
-radius = 1.0
+radius = 2.0
 
 [node name="right_stick_pointer" type="CharacterBody2D"]
 script = ExtResource("1_ahlox")

@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://dwp5gu7kpdpdy" path="res://addons/pointer_left.svg" id="1_xk5g2"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_r7tpr"]
-radius = 1.0
+radius = 2.0
 
 [node name="left_stick_pointer" type="CharacterBody2D"]
 script = ExtResource("1_r7tpr")

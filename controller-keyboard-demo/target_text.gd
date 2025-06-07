@@ -2,15 +2,17 @@ extends TextEdit
 
 @export var target_string: String
 
+@onready var timer = $"../Timer"
+
 var count: int
 
 var strings = [ 
 	"LOREM IPSUM DOLOR SIT AMET",
 	"CONSETETUR SADIPSCING ELITR",
-	"SED DIAM NONUMY EIRMOD TEMPOR ",
-	"INVIDUNT UT LABORE ET DOLORE ",
-	"MAGNA ALIQUYAM ERAT SED DIAM ",
-	"VOLUPTUA AT VERO EOS ET ACCUSAM ",
+	"SED DIAM NONUMY EIRMOD TEMPOR",
+	"INVIDUNT UT LABORE ET DOLORE",
+	"MAGNA ALIQUYAM ERAT SED DIAM",
+	"VOLUPTUA AT VERO EOS ET ACCUSAM",
 	"ET JUSTO DUO DOLORES ET EA REBUM",
 	"STET CLITA KASD GUBERGREN",
 	"NO SEA TAKIMATA SANCTUS EST",
@@ -21,7 +23,7 @@ var strings = [
 	"VEL ILLUM DOLORE EU FEUGIAT",
 	"NULLA FACILISIS AT VERO EROS",
 	"ET ACCUMSAN ET IUSTO ODIO ",
-	"DIGNISSIM QUI BLANDIT PRAESENT ",
+	"DIGNISSIM QUI BLANDIT PRAESENT",
 	"LUPTATUM ZZRIL DELENIT AUGUE ",
 	"DUIS DOLORE TE FEUGAIT NULLA",
 	"LOREM IPSUM DOLOR SIT AMET",
@@ -33,9 +35,14 @@ var strings = [
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	$".".set("text", strings[0])
+	count = 0
+	$".".set("text", strings[count])
+	
+	
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
+	#count = count + 1
+	#$".".set("text", strings[(strings.size() - 1) % count])
 	pass

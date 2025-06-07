@@ -2,9 +2,9 @@ extends CharacterBody2D
 
 @onready var parent = $".."
 
-const speed = 50.0
+const speed = 32.0
 
-@export var max_length = 200.0
+@export var max_length = 210.0
 @export var move_deadzone = 0.32
 @export var angle = 0.0
 @export var cursor_pos: Vector2
@@ -33,8 +33,9 @@ func _process(delta: float):
 			global_position.y = parent.global_position.y + sin(angle) * max_length
 			cursor_pos = global_position
 	else:
-		global_position = lerp(global_position, parent.global_position, delta * 10)
+		global_position = lerp(global_position, parent.global_position, delta * 8)
 		cursor_pos = global_position
+		#global_position = lerp(global_position, parent.global_position, delta * 8)
 	
 func _physics_process(delta: float):
 	move_and_collide(move_input * speed)
