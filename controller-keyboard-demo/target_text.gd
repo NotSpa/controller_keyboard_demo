@@ -43,6 +43,7 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	#count = count + 1
-	#$".".set("text", strings[(strings.size() - 1) % count])
+	if Input.is_action_just_released("r1"):
+		count = count + 1
+		$".".text = strings[(strings.size() - 1) % count]
 	pass
