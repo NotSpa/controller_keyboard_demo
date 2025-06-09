@@ -27,7 +27,8 @@ color = Color(0.841827, 0.845627, 0.917834, 1)
 position = Vector2(1025, 540)
 
 [node name="right_radial_menu" parent="." instance=ExtResource("2_i7dvk")]
-position = Vector2(1701, 791)
+position = Vector2(1634.47, 750)
+scale = Vector2(1.25, 1.25)
 
 [node name="area_1" type="Area2D" parent="right_radial_menu" groups=["U"]]
 collision_layer = 2
@@ -182,7 +183,8 @@ shape = SubResource("CircleShape2D_0jl8t")
 [node name="right_stick_input_pointer" parent="right_radial_menu" instance=ExtResource("5_up53h")]
 
 [node name="left_radial_menu" parent="." instance=ExtResource("2_juc2q")]
-position = Vector2(350, 789)
+position = Vector2(422.055, 750)
+scale = Vector2(1.25, 1.25)
 
 [node name="area_1" type="Area2D" parent="left_radial_menu" groups=["Q"]]
 collision_layer = 2
@@ -375,3 +377,5 @@ script = ExtResource("4_0jl8t")
 
 [node name="Timer" type="Timer" parent="."]
 one_shot = true
+
+[connection signal="text_set" from="input_text" to="target_text" method="_on_input_text_text_set"]

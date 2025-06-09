@@ -5,7 +5,7 @@ extends CharacterBody2D
 
 const speed = 32.0
 
-@export var max_length = 205.0
+@export var max_length = 260.0
 @export var move_deadzone = 0.32
 @export var angle = 0.0
 @export var cursor_pos: Vector2
@@ -16,9 +16,7 @@ var input_deadzone = 0.1
 
 var move_direction = Vector2.ZERO
 
-var block_right = false
-
-var count = 0
+@export var block_right = true
 
 func _ready() -> void:
 	InputMap.action_set_deadzone("right_stick_down", input_deadzone)
@@ -77,8 +75,8 @@ func _on_right_input_area_exited(area: Area2D) -> void:
 			input_string = "N"
 		elif area.is_in_group("M"):
 			input_string = "M"
-	blockRight()
-	print(input_string)
-	textField.text += input_string
+		blockRight()
+		textField.text += input_string
+
 	if area.is_in_group("block"):
 			unblockRight()

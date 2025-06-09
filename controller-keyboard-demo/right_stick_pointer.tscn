@@ -10,6 +10,7 @@ radius = 2.0
 script = ExtResource("1_ahlox")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+visible = false
 scale = Vector2(0.168269, 0.168269)
 texture = ExtResource("1_gbtni")
 

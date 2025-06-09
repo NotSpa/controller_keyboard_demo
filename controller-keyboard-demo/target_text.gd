@@ -6,6 +6,11 @@ extends TextEdit
 
 var count: int
 
+var time = Time
+
+var rand = RandomNumberGenerator.new()
+var id = 0
+
 var strings = [ 
 	"LOREM IPSUM DOLOR SIT AMET",
 	"CONSETETUR SADIPSCING ELITR",
@@ -37,9 +42,8 @@ var strings = [
 func _ready() -> void:
 	count = 0
 	$".".set("text", strings[count])
-	
-	
-
+	count = count + 1
+	id = rand.randi_range(100000,999999)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
@@ -47,3 +51,8 @@ func _process(delta: float) -> void:
 		count = count + 1
 		$".".text = strings[(strings.size() - 1) % count]
 	pass
+
+
+func _on_input_text_text_set() -> void:
+	if ($"../left_radial_menu/left_stick_input_pointer".block_left || $"../right_radial_menu/right_stick_input_pointer".block_right):
+		prints(id, ";", time.get_ticks_msec(), ";", $"../input_text".text, ";", $"../target_text".text, "\n")
