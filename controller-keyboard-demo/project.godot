@@ -11,9 +11,13 @@ config_version=5
 [application]
 
 config/name="Controller Keyboard Demo"
-run/main_scene="uid://ckfyqdt31byxu"
+run/main_scene="uid://bv1vjukuc6xts"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+Id="*res://id.gd"
 
 [debug]
 

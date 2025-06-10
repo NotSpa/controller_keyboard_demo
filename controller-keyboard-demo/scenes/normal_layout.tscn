@@ -1,0 +1,100 @@
+[gd_scene load_steps=9 format=3 uid="uid://frblap0a0kyn"]
+
+[ext_resource type="Script" uid="uid://deuk1m1qp3vf4" path="res://scripts/target_text.gd" id="1_isu58"]
+[ext_resource type="Script" uid="uid://cd2j0ybqoidxf" path="res://scenes/normal_layout.gd" id="1_oengy"]
+[ext_resource type="Script" uid="uid://dtuybwmrh50dy" path="res://scripts/input_text.gd" id="2_w5p1x"]
+[ext_resource type="PackedScene" uid="uid://yyd8otfaarba" path="res://scenes/keys_layout.tscn" id="3_w5p1x"]
+[ext_resource type="Texture2D" uid="uid://cfle4t8iwmts8" path="res://addons/controller_buttons/button_R2_2.svg" id="5_00f8y"]
+[ext_resource type="Texture2D" uid="uid://dh24hwkymy8ti" path="res://addons/controller_buttons/button_X_2.svg" id="6_ycsym"]
+[ext_resource type="Texture2D" uid="uid://cyepha7nm0w4o" path="res://addons/controller_buttons/button_Y_2.svg" id="7_c4703"]
+[ext_resource type="PackedScene" uid="uid://ybec3l4di3om" path="res://scenes/keyboard_pointer.tscn" id="8_ycsym"]
+
+[node name="normal_layout" type="Node2D"]
+script = ExtResource("1_oengy")
+
+[node name="Background2" type="ColorRect" parent="."]
+offset_right = 2048.0
+offset_bottom = 1080.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color(0.841827, 0.845627, 0.917834, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(1025, 540)
+
+[node name="target_text" type="TextEdit" parent="." groups=["user_interfaced"]]
+offset_left = 659.0
+offset_top = 88.0
+offset_right = 1359.0
+offset_bottom = 161.0
+theme_override_colors/font_placeholder_color = Color(0.732129, 0.835776, 0.859019, 1)
+theme_override_colors/font_readonly_color = Color(0.732129, 0.835776, 0.859019, 1)
+theme_override_colors/font_color = Color(0.732129, 0.835776, 0.859019, 1)
+theme_override_colors/font_selected_color = Color(0.732129, 0.835776, 0.859019, 1)
+theme_override_font_sizes/font_size = 32
+editable = false
+context_menu_enabled = false
+emoji_menu_enabled = false
+shortcut_keys_enabled = false
+selecting_enabled = false
+deselect_on_focus_loss_enabled = false
+drag_and_drop_selection_enabled = false
+virtual_keyboard_enabled = false
+middle_mouse_paste_enabled = false
+empty_selection_clipboard_enabled = false
+script = ExtResource("1_isu58")
+
+[node name="input_text" type="TextEdit" parent="." groups=["user_interfaced"]]
+offset_left = 659.0
+offset_top = 195.0
+offset_right = 1359.0
+offset_bottom = 268.0
+editable = false
+context_menu_enabled = false
+emoji_menu_enabled = false
+shortcut_keys_enabled = false
+selecting_enabled = false
+deselect_on_focus_loss_enabled = false
+drag_and_drop_selection_enabled = false
+virtual_keyboard_enabled = false
+middle_mouse_paste_enabled = false
+empty_selection_clipboard_enabled = false
+script = ExtResource("2_w5p1x")
+
+[node name="keys_layout" parent="." instance=ExtResource("3_w5p1x")]
+position = Vector2(56, 488)
+
+[node name="ButtonY2" type="Sprite2D" parent="keys_layout"]
+z_index = 1
+position = Vector2(1692.56, 425.69)
+scale = Vector2(0.051, 0.051)
+texture = ExtResource("7_c4703")
+
+[node name="ButtonX2" type="Sprite2D" parent="keys_layout"]
+z_index = 1
+position = Vector2(1894.31, 233.76)
+scale = Vector2(0.051, 0.051)
+texture = ExtResource("6_ycsym")
+
+[node name="ButtonR2" type="Sprite2D" parent="keys_layout"]
+z_index = 1
+position = Vector2(1896, 424)
+scale = Vector2(0.051, 0.051)
+texture = ExtResource("5_00f8y")
+metadata/_edit_group_ = true
+
+[node name="Label2" type="Label" parent="keys_layout/ButtonR2"]
+offset_left = -465.018
+offset_top = -129.722
+offset_right = 334.982
+offset_bottom = 380.278
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 306
+text = "R2"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="keyboard_pointer" parent="keys_layout" instance=ExtResource("8_ycsym")]
+position = Vector2(16, 16)

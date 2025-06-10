@@ -5,7 +5,7 @@ extends CharacterBody2D
 
 const speed = 32.0
 
-@export var max_length = 260.0
+@export var max_length = 205.0
 @export var move_deadzone = 0.32
 @export var angle = 0.0
 @export var cursor_pos: Vector2

@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://do35oct0jh48x"]
 
-[ext_resource type="Script" uid="uid://cpkpiqxpg8v61" path="res://right_stick_pointer.gd" id="1_ahlox"]
+[ext_resource type="Script" uid="uid://cpkpiqxpg8v61" path="res://scripts/right_stick_pointer.gd" id="1_ahlox"]
 [ext_resource type="Texture2D" uid="uid://bgud8c3oiyiuk" path="res://addons/pointer_right.svg" id="1_gbtni"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_gbtni"]

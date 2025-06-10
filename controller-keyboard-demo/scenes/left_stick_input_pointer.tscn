@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://oujd5fxe2eru"]
 
-[ext_resource type="Script" uid="uid://dkm4uow6phlbf" path="res://left_stick_pointer_inputs.gd" id="1_jyc8n"]
+[ext_resource type="Script" uid="uid://dkm4uow6phlbf" path="res://scripts/left_stick_pointer_inputs.gd" id="1_jyc8n"]
 [ext_resource type="Texture2D" uid="uid://dwp5gu7kpdpdy" path="res://addons/pointer_left.svg" id="2_2rvtb"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_r7tpr"]

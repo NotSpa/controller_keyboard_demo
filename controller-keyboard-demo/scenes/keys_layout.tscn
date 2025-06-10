@@ -1,0 +1,1066 @@
+[gd_scene load_steps=2 format=3 uid="uid://yyd8otfaarba"]
+
+[ext_resource type="Texture2D" uid="uid://bhcemda63xeok" path="res://addons/normal/normal_key.svg" id="1_wssee"]
+
+[node name="keys_layout" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1936.0
+offset_bottom = 592.0
+color = Color(0, 0, 0, 1)
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 200.0
+offset_bottom = 200.0
+metadata/_edit_group_ = true
+
+[node name="ColorRect" type="ColorRect" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.333333
+anchor_bottom = 0.333333
+offset_right = 128.0
+offset_bottom = 128.0
+color = Color(0.0754742, 0.188468, 0.309719, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Q" type="Sprite2D" parent="Control"]
+position = Vector2(96.08, 96.1133)
+scale = Vector2(0.199833, 0.199972)
+texture = ExtResource("1_wssee")
+
+[node name="Label" type="Label" parent="Control"]
+layout_mode = 0
+offset_right = 192.0
+offset_bottom = 192.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 72
+text = "Q"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Control2" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 200.0
+offset_top = 8.0
+offset_right = 392.0
+offset_bottom = 200.0
+metadata/_edit_group_ = true
+
+[node name="ColorRect" type="ColorRect" parent="Control2"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.333333
+anchor_bottom = 0.333333
+offset_right = 128.0
+offset_bottom = 128.0
+color = Color(0.0754742, 0.188468, 0.309719, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="W" type="Sprite2D" parent="Control2"]
+position = Vector2(96.08, 96.1133)
+scale = Vector2(0.199833, 0.199972)
+texture = ExtResource("1_wssee")
+
+[node name="Label" type="Label" parent="Control2"]
+layout_mode = 0
+offset_right = 192.0
+offset_bottom = 192.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 72
+text = "W"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Control3" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 392.0
+offset_top = 8.0
+offset_right = 584.0
+offset_bottom = 200.0
+metadata/_edit_group_ = true
+
+[node name="ColorRect" type="ColorRect" parent="Control3"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.333333
+anchor_bottom = 0.333333
+offset_right = 128.0
+offset_bottom = 128.0
+color = Color(0.0754742, 0.188468, 0.309719, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="E" type="Sprite2D" parent="Control3"]
+position = Vector2(96.08, 96.1133)
+scale = Vector2(0.199833, 0.199972)
+texture = ExtResource("1_wssee")
+
+[node name="Label" type="Label" parent="Control3"]
+layout_mode = 0
+offset_right = 192.0
+offset_bottom = 192.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 72
+text = "E"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Control4" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 584.0
+offset_top = 8.0
+offset_right = 776.0
+offset_bottom = 200.0
+metadata/_edit_group_ = true
+
+[node name="ColorRect" type="ColorRect" parent="Control4"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.333333
+anchor_bottom = 0.333333
+offset_right = 128.0
+offset_bottom = 128.0
+color = Color(0.0754742, 0.188468, 0.309719, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="R" type="Sprite2D" parent="Control4"]
+position = Vector2(96.08, 96.1133)
+scale = Vector2(0.199833, 0.199972)
+texture = ExtResource("1_wssee")
+
+[node name="Label" type="Label" parent="Control4"]
+layout_mode = 0
+offset_right = 192.0
+offset_bottom = 192.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 72
+text = "R"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Control5" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 776.0
+offset_top = 8.0
+offset_right = 968.0
+offset_bottom = 200.0
+metadata/_edit_group_ = true
+
+[node name="ColorRect" type="ColorRect" parent="Control5"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.333333
+anchor_bottom = 0.333333
+offset_right = 128.0
+offset_bottom = 128.0
+color = Color(0.0754742, 0.188468, 0.309719, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="T" type="Sprite2D" parent="Control5"]
+position = Vector2(96.08, 96.1133)
+scale = Vector2(0.199833, 0.199972)
+texture = ExtResource("1_wssee")
+
+[node name="Label" type="Label" parent="Control5"]
+layout_mode = 0
+offset_right = 192.0
+offset_bottom = 192.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 72
+text = "T"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Control6" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 968.0
+offset_top = 8.0
+offset_right = 1160.0
+offset_bottom = 200.0
+metadata/_edit_group_ = true
+
+[node name="ColorRect" type="ColorRect" parent="Control6"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.333333
+anchor_bottom = 0.333333
+offset_right = 128.0
+offset_bottom = 128.0
+color = Color(0.0754742, 0.188468, 0.309719, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Y" type="Sprite2D" parent="Control6"]
+position = Vector2(96.08, 96.1133)
+scale = Vector2(0.199833, 0.199972)
+texture = ExtResource("1_wssee")
+
+[node name="Label" type="Label" parent="Control6"]
+layout_mode = 0
+offset_right = 192.0
+offset_bottom = 192.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 72
+text = "Y"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Control7" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 1160.0
+offset_top = 8.0
+offset_right = 1352.0
+offset_bottom = 200.0
+metadata/_edit_group_ = true
+
+[node name="ColorRect" type="ColorRect" parent="Control7"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.333333
+anchor_bottom = 0.333333
+offset_right = 128.0
+offset_bottom = 128.0
+color = Color(0.0754742, 0.188468, 0.309719, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="U" type="Sprite2D" parent="Control7"]
+position = Vector2(96.08, 96.1133)
+scale = Vector2(0.199833, 0.199972)
+texture = ExtResource("1_wssee")
+
+[node name="Label" type="Label" parent="Control7"]
+layout_mode = 0
+offset_right = 192.0
+offset_bottom = 192.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 72
+text = "U"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Control8" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 1352.0
+offset_top = 8.0
+offset_right = 1544.0
+offset_bottom = 200.0
+metadata/_edit_group_ = true
+
+[node name="ColorRect" type="ColorRect" parent="Control8"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.333333
+anchor_bottom = 0.333333
+offset_right = 128.0
+offset_bottom = 128.0
+color = Color(0.0754742, 0.188468, 0.309719, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="I" type="Sprite2D" parent="Control8"]
+position = Vector2(96.08, 96.1133)
+scale = Vector2(0.199833, 0.199972)
+texture = ExtResource("1_wssee")
+
+[node name="Label" type="Label" parent="Control8"]
+layout_mode = 0
+offset_right = 192.0
+offset_bottom = 192.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 72
+text = "I"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Control9" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 1544.0
+offset_top = 8.0
+offset_right = 1736.0
+offset_bottom = 200.0
+metadata/_edit_group_ = true
+
+[node name="ColorRect" type="ColorRect" parent="Control9"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.333333
+anchor_bottom = 0.333333
+offset_right = 128.0
+offset_bottom = 128.0
+color = Color(0.0754742, 0.188468, 0.309719, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="O" type="Sprite2D" parent="Control9"]
+position = Vector2(96.08, 96.1133)
+scale = Vector2(0.199833, 0.199972)
+texture = ExtResource("1_wssee")
+
+[node name="Label" type="Label" parent="Control9"]
+layout_mode = 0
+offset_right = 192.0
+offset_bottom = 192.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 72
+text = "O"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Control10" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 1736.0
+offset_top = 8.0
+offset_right = 1928.0
+offset_bottom = 200.0
+metadata/_edit_group_ = true
+
+[node name="ColorRect" type="ColorRect" parent="Control10"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.333333
+anchor_bottom = 0.333333
+offset_right = 128.0
+offset_bottom = 128.0
+color = Color(0.0754742, 0.188468, 0.309719, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="P" type="Sprite2D" parent="Control10"]
+position = Vector2(96.08, 96.1133)
+scale = Vector2(0.199833, 0.199972)
+texture = ExtResource("1_wssee")
+
+[node name="Label" type="Label" parent="Control10"]
+layout_mode = 0
+offset_right = 192.0
+offset_bottom = 192.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 72
+text = "P"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Control11" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 8.0
+offset_top = 200.0
+offset_right = 200.0
+offset_bottom = 392.0
+metadata/_edit_group_ = true
+
+[node name="ColorRect" type="ColorRect" parent="Control11"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.333333
+anchor_bottom = 0.333333
+offset_right = 128.0
+offset_bottom = 128.0
+color = Color(0.0754742, 0.188468, 0.309719, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="A" type="Sprite2D" parent="Control11"]
+position = Vector2(96.08, 96.1133)
+scale = Vector2(0.199833, 0.199972)
+texture = ExtResource("1_wssee")
+
+[node name="Label" type="Label" parent="Control11"]
+layout_mode = 0
+offset_right = 192.0
+offset_bottom = 192.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 72
+text = "A"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Control12" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 200.0
+offset_top = 200.0
+offset_right = 392.0
+offset_bottom = 392.0
+metadata/_edit_group_ = true
+
+[node name="ColorRect" type="ColorRect" parent="Control12"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.333333
+anchor_bottom = 0.333333
+offset_right = 128.0
+offset_bottom = 128.0
+color = Color(0.0754742, 0.188468, 0.309719, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="S" type="Sprite2D" parent="Control12"]
+position = Vector2(96.08, 96.1133)
+scale = Vector2(0.199833, 0.199972)
+texture = ExtResource("1_wssee")
+
+[node name="Label" type="Label" parent="Control12"]
+layout_mode = 0
+offset_right = 192.0
+offset_bottom = 192.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 72
+text = "S"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Control13" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 392.0
+offset_top = 200.0
+offset_right = 584.0
+offset_bottom = 392.0
+metadata/_edit_group_ = true
+
+[node name="ColorRect" type="ColorRect" parent="Control13"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.333333
+anchor_bottom = 0.333333
+offset_right = 128.0
+offset_bottom = 128.0
+color = Color(0.0754742, 0.188468, 0.309719, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="D" type="Sprite2D" parent="Control13"]
+position = Vector2(96.08, 96.1133)
+scale = Vector2(0.199833, 0.199972)
+texture = ExtResource("1_wssee")
+
+[node name="Label" type="Label" parent="Control13"]
+layout_mode = 0
+offset_right = 192.0
+offset_bottom = 192.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 72
+text = "D"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Control14" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 584.0
+offset_top = 200.0
+offset_right = 776.0
+offset_bottom = 392.0
+metadata/_edit_group_ = true
+
+[node name="ColorRect" type="ColorRect" parent="Control14"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.333333
+anchor_bottom = 0.333333
+offset_right = 128.0
+offset_bottom = 128.0
+color = Color(0.0754742, 0.188468, 0.309719, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="F" type="Sprite2D" parent="Control14"]
+position = Vector2(96.08, 96.1133)
+scale = Vector2(0.199833, 0.199972)
+texture = ExtResource("1_wssee")
+
+[node name="Label" type="Label" parent="Control14"]
+layout_mode = 0
+offset_right = 192.0
+offset_bottom = 192.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 72
+text = "F"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Control15" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 776.0
+offset_top = 200.0
+offset_right = 968.0
+offset_bottom = 392.0
+metadata/_edit_group_ = true
+
+[node name="ColorRect" type="ColorRect" parent="Control15"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.333333
+anchor_bottom = 0.333333
+offset_right = 128.0
+offset_bottom = 128.0
+color = Color(0.0754742, 0.188468, 0.309719, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="G" type="Sprite2D" parent="Control15"]
+position = Vector2(96.08, 96.1133)
+scale = Vector2(0.199833, 0.199972)
+texture = ExtResource("1_wssee")
+
+[node name="Label" type="Label" parent="Control15"]
+layout_mode = 0
+offset_right = 192.0
+offset_bottom = 192.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 72
+text = "G"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Control16" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 968.0
+offset_top = 200.0
+offset_right = 1160.0
+offset_bottom = 392.0
+metadata/_edit_group_ = true
+
+[node name="ColorRect" type="ColorRect" parent="Control16"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.333333
+anchor_bottom = 0.333333
+offset_right = 128.0
+offset_bottom = 128.0
+color = Color(0.0754742, 0.188468, 0.309719, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="H" type="Sprite2D" parent="Control16"]
+position = Vector2(96.08, 96.1133)
+scale = Vector2(0.199833, 0.199972)
+texture = ExtResource("1_wssee")
+
+[node name="Label" type="Label" parent="Control16"]
+layout_mode = 0
+offset_right = 192.0
+offset_bottom = 192.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 72
+text = "H"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Control17" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 1160.0
+offset_top = 200.0
+offset_right = 1352.0
+offset_bottom = 392.0
+metadata/_edit_group_ = true
+
+[node name="ColorRect" type="ColorRect" parent="Control17"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.333333
+anchor_bottom = 0.333333
+offset_right = 128.0
+offset_bottom = 128.0
+color = Color(0.0754742, 0.188468, 0.309719, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="J" type="Sprite2D" parent="Control17"]
+position = Vector2(96.08, 96.1133)
+scale = Vector2(0.199833, 0.199972)
+texture = ExtResource("1_wssee")
+
+[node name="Label" type="Label" parent="Control17"]
+layout_mode = 0
+offset_right = 192.0
+offset_bottom = 192.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 72
+text = "J"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Control18" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 1352.0
+offset_top = 200.0
+offset_right = 1544.0
+offset_bottom = 392.0
+metadata/_edit_group_ = true
+
+[node name="ColorRect" type="ColorRect" parent="Control18"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.333333
+anchor_bottom = 0.333333
+offset_right = 128.0
+offset_bottom = 128.0
+color = Color(0.0754742, 0.188468, 0.309719, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="K" type="Sprite2D" parent="Control18"]
+position = Vector2(96.08, 96.1133)
+scale = Vector2(0.199833, 0.199972)
+texture = ExtResource("1_wssee")
+
+[node name="Label" type="Label" parent="Control18"]
+layout_mode = 0
+offset_right = 192.0
+offset_bottom = 192.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 72
+text = "K"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Control19" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 1544.0
+offset_top = 200.0
+offset_right = 1736.0
+offset_bottom = 392.0
+metadata/_edit_group_ = true
+
+[node name="ColorRect" type="ColorRect" parent="Control19"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.333333
+anchor_bottom = 0.333333
+offset_right = 128.0
+offset_bottom = 128.0
+color = Color(0.0754742, 0.188468, 0.309719, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="L" type="Sprite2D" parent="Control19"]
+position = Vector2(96.08, 96.1133)
+scale = Vector2(0.199833, 0.199972)
+texture = ExtResource("1_wssee")
+
+[node name="Label" type="Label" parent="Control19"]
+layout_mode = 0
+offset_right = 192.0
+offset_bottom = 192.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 72
+text = "L"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Control20" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 1736.0
+offset_top = 200.0
+offset_right = 1928.0
+offset_bottom = 392.0
+metadata/_edit_group_ = true
+
+[node name="ColorRect" type="ColorRect" parent="Control20"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.333333
+anchor_bottom = 0.333333
+offset_right = 128.0
+offset_bottom = 128.0
+color = Color(0.0754742, 0.188468, 0.309719, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="DEL" type="Sprite2D" parent="Control20"]
+position = Vector2(96, 96.0001)
+scale = Vector2(0.2, 0.200208)
+texture = ExtResource("1_wssee")
+
+[node name="Label" type="Label" parent="Control20"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.333333
+anchor_bottom = 0.333333
+offset_right = 128.0
+offset_bottom = 128.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 64
+text = "DEL"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Control21" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 8.0
+offset_top = 392.0
+offset_right = 200.0
+offset_bottom = 584.0
+metadata/_edit_group_ = true
+
+[node name="ColorRect" type="ColorRect" parent="Control21"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.333333
+anchor_bottom = 0.333333
+offset_right = 128.0
+offset_bottom = 128.0
+color = Color(0.0754742, 0.188468, 0.309719, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Z" type="Sprite2D" parent="Control21"]
+position = Vector2(96.08, 96.1133)
+scale = Vector2(0.199833, 0.199972)
+texture = ExtResource("1_wssee")
+
+[node name="Label" type="Label" parent="Control21"]
+layout_mode = 0
+offset_right = 192.0
+offset_bottom = 192.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 72
+text = "Z"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Control22" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 200.0
+offset_top = 392.0
+offset_right = 392.0
+offset_bottom = 584.0
+metadata/_edit_group_ = true
+
+[node name="ColorRect" type="ColorRect" parent="Control22"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.333333
+anchor_bottom = 0.333333
+offset_right = 128.0
+offset_bottom = 128.0
+color = Color(0.0754742, 0.188468, 0.309719, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="X" type="Sprite2D" parent="Control22"]
+position = Vector2(96.08, 96.1133)
+scale = Vector2(0.199833, 0.199972)
+texture = ExtResource("1_wssee")
+
+[node name="Label" type="Label" parent="Control22"]
+layout_mode = 0
+offset_right = 192.0
+offset_bottom = 192.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 72
+text = "X"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Control23" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 392.0
+offset_top = 392.0
+offset_right = 584.0
+offset_bottom = 584.0
+metadata/_edit_group_ = true
+
+[node name="ColorRect" type="ColorRect" parent="Control23"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.333333
+anchor_bottom = 0.333333
+offset_right = 128.0
+offset_bottom = 128.0
+color = Color(0.0754742, 0.188468, 0.309719, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="C" type="Sprite2D" parent="Control23"]
+position = Vector2(96.08, 96.1133)
+scale = Vector2(0.199833, 0.199972)
+texture = ExtResource("1_wssee")
+
+[node name="Label" type="Label" parent="Control23"]
+layout_mode = 0
+offset_right = 192.0
+offset_bottom = 192.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 72
+text = "C"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Control24" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 584.0
+offset_top = 392.0
+offset_right = 776.0
+offset_bottom = 584.0
+metadata/_edit_group_ = true
+
+[node name="ColorRect" type="ColorRect" parent="Control24"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.333333
+anchor_bottom = 0.333333
+offset_right = 128.0
+offset_bottom = 128.0
+color = Color(0.0754742, 0.188468, 0.309719, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="V" type="Sprite2D" parent="Control24"]
+position = Vector2(96.08, 96.1133)
+scale = Vector2(0.199833, 0.199972)
+texture = ExtResource("1_wssee")
+
+[node name="Label" type="Label" parent="Control24"]
+layout_mode = 0
+offset_right = 192.0
+offset_bottom = 192.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 72
+text = "V"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Control25" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 776.0
+offset_top = 392.0
+offset_right = 968.0
+offset_bottom = 584.0
+metadata/_edit_group_ = true
+
+[node name="ColorRect" type="ColorRect" parent="Control25"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.333333
+anchor_bottom = 0.333333
+offset_right = 128.0
+offset_bottom = 128.0
+color = Color(0.0754742, 0.188468, 0.309719, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="B" type="Sprite2D" parent="Control25"]
+position = Vector2(96.08, 96.1133)
+scale = Vector2(0.199833, 0.199972)
+texture = ExtResource("1_wssee")
+
+[node name="Label" type="Label" parent="Control25"]
+layout_mode = 0
+offset_right = 192.0
+offset_bottom = 192.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 72
+text = "B"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Control26" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 968.0
+offset_top = 392.0
+offset_right = 1160.0
+offset_bottom = 584.0
+metadata/_edit_group_ = true
+
+[node name="ColorRect" type="ColorRect" parent="Control26"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.333333
+anchor_bottom = 0.333333
+offset_right = 128.0
+offset_bottom = 128.0
+color = Color(0.0754742, 0.188468, 0.309719, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="N" type="Sprite2D" parent="Control26"]
+position = Vector2(96.08, 96.1133)
+scale = Vector2(0.199833, 0.199972)
+texture = ExtResource("1_wssee")
+
+[node name="Label" type="Label" parent="Control26"]
+layout_mode = 0
+offset_right = 192.0
+offset_bottom = 192.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 72
+text = "N"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Control27" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 1160.0
+offset_top = 392.0
+offset_right = 1352.0
+offset_bottom = 584.0
+metadata/_edit_group_ = true
+
+[node name="ColorRect" type="ColorRect" parent="Control27"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.333333
+anchor_bottom = 0.333333
+offset_right = 128.0
+offset_bottom = 128.0
+color = Color(0.0754742, 0.188468, 0.309719, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="M" type="Sprite2D" parent="Control27"]
+position = Vector2(96.08, 96.1133)
+scale = Vector2(0.199833, 0.199972)
+texture = ExtResource("1_wssee")
+
+[node name="Label" type="Label" parent="Control27"]
+layout_mode = 0
+offset_right = 192.0
+offset_bottom = 192.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 72
+text = "M"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Control28" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 1352.0
+offset_top = 392.0
+offset_right = 1736.0
+offset_bottom = 584.0
+metadata/_edit_group_ = true
+
+[node name="ColorRect" type="ColorRect" parent="Control28"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.666667
+anchor_bottom = 0.333333
+offset_right = 128.0
+offset_bottom = 128.0
+color = Color(0.0754742, 0.188468, 0.309719, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Space" type="Sprite2D" parent="Control28"]
+position = Vector2(192, 96.0001)
+scale = Vector2(0.4, 0.200208)
+texture = ExtResource("1_wssee")
+
+[node name="Label" type="Label" parent="Control28"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.333333
+anchor_bottom = 0.333333
+offset_right = 256.0
+offset_bottom = 128.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 72
+text = "Space"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Control30" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 1736.0
+offset_top = 392.0
+offset_right = 1928.0
+offset_bottom = 584.0
+metadata/_edit_group_ = true
+
+[node name="ColorRect" type="ColorRect" parent="Control30"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.333333
+anchor_bottom = 0.333333
+offset_right = 128.0
+offset_bottom = 128.0
+color = Color(0.0754742, 0.188468, 0.309719, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="NEXT" type="Sprite2D" parent="Control30"]
+position = Vector2(96, 96.0001)
+scale = Vector2(0.2, 0.200208)
+texture = ExtResource("1_wssee")
+
+[node name="Label" type="Label" parent="Control30"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.333333
+anchor_bottom = 0.333333
+offset_right = 128.0
+offset_bottom = 128.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 64
+text = "NEXT"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true

@@ -1,11 +1,15 @@
-[gd_scene load_steps=9 format=3 uid="uid://ckfyqdt31byxu"]
+[gd_scene load_steps=13 format=3 uid="uid://ckfyqdt31byxu"]
 
-[ext_resource type="PackedScene" uid="uid://dpyguv5q31rk2" path="res://right_radial_menu.tscn" id="2_i7dvk"]
-[ext_resource type="PackedScene" uid="uid://ctog40s46ksb5" path="res://left_radial_menu.tscn" id="2_juc2q"]
-[ext_resource type="Script" uid="uid://deuk1m1qp3vf4" path="res://target_text.gd" id="3_juc2q"]
-[ext_resource type="Script" uid="uid://dtuybwmrh50dy" path="res://input_text.gd" id="4_0jl8t"]
-[ext_resource type="PackedScene" uid="uid://oujd5fxe2eru" path="res://left_stick_input_pointer.tscn" id="4_r3lf1"]
-[ext_resource type="PackedScene" uid="uid://d2nllgedu5hjg" path="res://right_stick_input_pointer.tscn" id="5_up53h"]
+[ext_resource type="Script" uid="uid://bn7cisc00drep" path="res://scenes/controller_layout.gd" id="1_e35g6"]
+[ext_resource type="PackedScene" uid="uid://dpyguv5q31rk2" path="res://scenes/right_radial_menu.tscn" id="1_jcr8d"]
+[ext_resource type="PackedScene" uid="uid://d2nllgedu5hjg" path="res://scenes/right_stick_input_pointer.tscn" id="2_ocj54"]
+[ext_resource type="PackedScene" uid="uid://ctog40s46ksb5" path="res://scenes/left_radial_menu.tscn" id="3_fyupr"]
+[ext_resource type="PackedScene" uid="uid://oujd5fxe2eru" path="res://scenes/left_stick_input_pointer.tscn" id="4_24h77"]
+[ext_resource type="Script" uid="uid://deuk1m1qp3vf4" path="res://scripts/target_text.gd" id="5_e35g6"]
+[ext_resource type="Script" uid="uid://dtuybwmrh50dy" path="res://scripts/input_text.gd" id="6_4sf85"]
+[ext_resource type="Texture2D" uid="uid://5haufvstgc8s" path="res://addons/controller_buttons/button_X.png" id="7_24h77"]
+[ext_resource type="Texture2D" uid="uid://ct6gxmrxnyvyr" path="res://addons/controller_buttons/button_Y.png" id="8_e35g6"]
+[ext_resource type="Texture2D" uid="uid://dwuvr51ltd14l" path="res://addons/controller_buttons/button_R2.png" id="10_4sf85"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_juc2q"]
 radius = 25.0
@@ -14,19 +18,23 @@ height = 116.0
 [sub_resource type="CircleShape2D" id="CircleShape2D_0jl8t"]
 radius = 116.069
 
-[node name="Demo" type="Node2D"]
+[node name="controller_layout" type="Node2D"]
+script = ExtResource("1_e35g6")
 
 [node name="Background2" type="ColorRect" parent="."]
-offset_right = 2048.0
-offset_bottom = 1080.0
+offset_left = -3.0
+offset_top = 39.0
+offset_right = 2045.0
+offset_bottom = 1119.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 color = Color(0.841827, 0.845627, 0.917834, 1)
+metadata/_edit_use_anchors_ = true
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(1025, 540)
 
-[node name="right_radial_menu" parent="." instance=ExtResource("2_i7dvk")]
+[node name="right_radial_menu" parent="." instance=ExtResource("1_jcr8d")]
 position = Vector2(1634.47, 750)
 scale = Vector2(1.25, 1.25)
 
@@ -180,9 +188,9 @@ collision_mask = 2
 process_physics_priority = 1
 shape = SubResource("CircleShape2D_0jl8t")
 
-[node name="right_stick_input_pointer" parent="right_radial_menu" instance=ExtResource("5_up53h")]
+[node name="right_stick_input_pointer" parent="right_radial_menu" instance=ExtResource("2_ocj54")]
 
-[node name="left_radial_menu" parent="." instance=ExtResource("2_juc2q")]
+[node name="left_radial_menu" parent="." instance=ExtResource("3_fyupr")]
 position = Vector2(422.055, 750)
 scale = Vector2(1.25, 1.25)
 
@@ -334,13 +342,13 @@ collision_mask = 2
 process_physics_priority = 1
 shape = SubResource("CircleShape2D_0jl8t")
 
-[node name="left_stick_input_pointer" parent="left_radial_menu" instance=ExtResource("4_r3lf1")]
+[node name="left_stick_input_pointer" parent="left_radial_menu" instance=ExtResource("4_24h77")]
 
 [node name="target_text" type="TextEdit" parent="." groups=["user_interfaced"]]
 offset_left = 659.0
-offset_top = 238.0
+offset_top = 88.0
 offset_right = 1359.0
-offset_bottom = 311.0
+offset_bottom = 161.0
 theme_override_colors/font_placeholder_color = Color(0.732129, 0.835776, 0.859019, 1)
 theme_override_colors/font_readonly_color = Color(0.732129, 0.835776, 0.859019, 1)
 theme_override_colors/font_color = Color(0.732129, 0.835776, 0.859019, 1)
@@ -356,13 +364,18 @@ drag_and_drop_selection_enabled = false
 virtual_keyboard_enabled = false
 middle_mouse_paste_enabled = false
 empty_selection_clipboard_enabled = false
-script = ExtResource("3_juc2q")
+script = ExtResource("5_e35g6")
 
 [node name="input_text" type="TextEdit" parent="." groups=["user_interfaced"]]
 offset_left = 659.0
-offset_top = 329.0
+offset_top = 195.0
 offset_right = 1359.0
-offset_bottom = 402.0
+offset_bottom = 268.0
+theme_override_colors/font_placeholder_color = Color(0.733333, 0.835294, 0.858824, 1)
+theme_override_colors/font_readonly_color = Color(0.733333, 0.835294, 0.858824, 1)
+theme_override_colors/font_color = Color(0.733333, 0.835294, 0.858824, 1)
+theme_override_colors/font_selected_color = Color(0.733333, 0.835294, 0.858824, 1)
+theme_override_font_sizes/font_size = 32
 editable = false
 context_menu_enabled = false
 emoji_menu_enabled = false
@@ -373,9 +386,93 @@ drag_and_drop_selection_enabled = false
 virtual_keyboard_enabled = false
 middle_mouse_paste_enabled = false
 empty_selection_clipboard_enabled = false
-script = ExtResource("4_0jl8t")
+caret_move_on_right_click = false
+caret_multiple = false
+draw_control_chars = true
+script = ExtResource("6_4sf85")
 
 [node name="Timer" type="Timer" parent="."]
 one_shot = true
+
+[node name="Spacebar" type="ColorRect" parent="."]
+offset_left = 968.0
+offset_top = 640.0
+offset_right = 1076.0
+offset_bottom = 680.0
+metadata/_edit_group_ = true
+
+[node name="ButtonY" type="Sprite2D" parent="Spacebar"]
+position = Vector2(138, 18)
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("8_e35g6")
+
+[node name="Label" type="Label" parent="Spacebar"]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 3.0
+offset_right = 88.0
+offset_bottom = 37.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 24
+text = "Space"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Del" type="ColorRect" parent="."]
+offset_left = 968.0
+offset_top = 696.0
+offset_right = 1076.0
+offset_bottom = 736.0
+metadata/_edit_group_ = true
+
+[node name="ButtonX" type="Sprite2D" parent="Del"]
+position = Vector2(138, 20)
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("7_24h77")
+
+[node name="Label" type="Label" parent="Del"]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 3.0
+offset_right = 88.0
+offset_bottom = 37.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 24
+text = "Del"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = 968.0
+offset_top = 584.0
+offset_right = 1076.0
+offset_bottom = 624.0
+metadata/_edit_group_ = true
+
+[node name="ButtonR2" type="Sprite2D" parent="ColorRect"]
+position = Vector2(136, 17.9999)
+scale = Vector2(0.055, 0.055)
+texture = ExtResource("10_4sf85")
+
+[node name="Label2" type="Label" parent="ColorRect/ButtonR2"]
+offset_left = -407.637
+offset_top = -229.635
+offset_right = 392.363
+offset_bottom = 280.365
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 306
+text = "R2"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label" type="Label" parent="ColorRect"]
+layout_mode = 0
+offset_right = 108.0
+offset_bottom = 40.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 24
+text = "Next"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [connection signal="text_set" from="input_text" to="target_text" method="_on_input_text_text_set"]
