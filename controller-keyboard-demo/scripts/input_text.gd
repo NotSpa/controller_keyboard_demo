@@ -12,7 +12,8 @@ func _process(delta: float) -> void:
 	if Input.is_action_just_released("r2"):
 		$".".text = ""
 	if Input.is_action_just_pressed("Y"):
-		$".".text = $".".text.erase($".".text.length()-1, 1)
+		if $".".text.length() > 0:
+			$".".text = $".".text.erase($".".text.length()-1, 1)
 		$"../Del".color = Color(0.75,0,0.1,0.6)
 	if Input.is_action_just_released("Y"):
 		$"../Del".color = Color(1,1,1)

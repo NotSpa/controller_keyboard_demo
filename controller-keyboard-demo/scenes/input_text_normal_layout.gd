@@ -15,7 +15,8 @@ func _process(delta: float) -> void:
 		$".".text = ""
 		$"../keys_layout/ButtonR2".self_modulate = Color(1,1,1)
 	if Input.is_action_just_pressed("Y"):
-		$".".text = $".".text.erase($".".text.length()-1, 1)
+		if $".".text.length() > 0:
+			$".".text = $".".text.erase($".".text.length()-1, 1)
 		$"../keys_layout/ButtonX2".self_modulate = Color(0.75,0,0.1,0.6)
 	if Input.is_action_just_released("Y"):
 		$"../keys_layout/ButtonX2".self_modulate = Color(1,1,1)

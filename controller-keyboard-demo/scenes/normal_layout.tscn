@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=3 uid="uid://frblap0a0kyn"]
 
-[ext_resource type="Script" uid="uid://deuk1m1qp3vf4" path="res://scripts/target_text.gd" id="1_isu58"]
 [ext_resource type="Script" uid="uid://cd2j0ybqoidxf" path="res://scenes/normal_layout.gd" id="1_oengy"]
+[ext_resource type="Script" uid="uid://dskek41nudif3" path="res://scenes/target_text_normal_layout.gd" id="2_c4703"]
 [ext_resource type="Script" uid="uid://cbc6qrgx1b6fg" path="res://scenes/input_text_normal_layout.gd" id="3_c4703"]
 [ext_resource type="PackedScene" uid="uid://yyd8otfaarba" path="res://scenes/keys_layout.tscn" id="3_w5p1x"]
 [ext_resource type="Texture2D" uid="uid://cfle4t8iwmts8" path="res://addons/controller_buttons/button_R2_2.svg" id="5_00f8y"]
@@ -44,7 +44,7 @@ drag_and_drop_selection_enabled = false
 virtual_keyboard_enabled = false
 middle_mouse_paste_enabled = false
 empty_selection_clipboard_enabled = false
-script = ExtResource("1_isu58")
+script = ExtResource("2_c4703")
 
 [node name="input_text" type="TextEdit" parent="." groups=["user_interfaced"]]
 offset_left = 659.0
@@ -111,3 +111,5 @@ metadata/_edit_use_anchors_ = true
 position = Vector2(16, 16)
 
 [node name="Timer" type="Timer" parent="."]
+
+[connection signal="text_set" from="input_text" to="target_text" method="_on_input_text_text_set"]
