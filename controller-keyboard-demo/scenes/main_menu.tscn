@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://bv1vjukuc6xts"]
+[gd_scene load_steps=6 format=3 uid="uid://bv1vjukuc6xts"]
 
 [ext_resource type="StyleBox" uid="uid://c1ryi4syccb1s" path="res://scenes/button_style_hover.tres" id="1_ekxnf"]
 [ext_resource type="Script" uid="uid://8xb4jcfrf8vv" path="res://scripts/main_menu.gd" id="1_wu84c"]
+[ext_resource type="StyleBox" uid="uid://c4oojxreb03c8" path="res://scenes/focus_button.tres" id="2_8ln24"]
 [ext_resource type="StyleBox" uid="uid://bp40jklqrijkc" path="res://scenes/button_style_pressed.tres" id="2_bqqt6"]
 [ext_resource type="StyleBox" uid="uid://dallgodc7d6ei" path="res://scenes/button_style.tres" id="3_bqqt6"]
 
@@ -15,6 +16,7 @@ grow_vertical = 2
 script = ExtResource("1_wu84c")
 
 [node name="Background2" type="ColorRect" parent="."]
+layout_mode = 0
 offset_right = 2048.0
 offset_bottom = 1080.0
 size_flags_horizontal = 3
@@ -55,11 +57,18 @@ grow_vertical = 2
 [node name="start" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 2
+focus_neighbor_left = NodePath("../exit")
+focus_neighbor_top = NodePath("../exit")
+focus_neighbor_right = NodePath("../exit")
+focus_neighbor_bottom = NodePath("../exit")
 theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("2_8ln24")
 theme_override_styles/hover = ExtResource("1_ekxnf")
 theme_override_styles/pressed = ExtResource("2_bqqt6")
 theme_override_styles/normal = ExtResource("3_bqqt6")
@@ -68,11 +77,16 @@ text = "Start"
 [node name="exit" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 2
+focus_neighbor_left = NodePath("../start")
+focus_neighbor_top = NodePath("../start")
+focus_neighbor_right = NodePath("../start")
+focus_neighbor_bottom = NodePath("../start")
 theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("2_8ln24")
 theme_override_styles/hover = ExtResource("1_ekxnf")
 theme_override_styles/pressed = ExtResource("2_bqqt6")
 theme_override_styles/normal = ExtResource("3_bqqt6")

@@ -44,10 +44,11 @@ func _ready() -> void:
 	count = 0
 	$".".set("text", strings[count])
 	count = count + 1
+	InputMap.action_set_deadzone("r2", 0.1)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	if Input.is_action_just_released("r1"):
+	if Input.is_action_just_released("r2"):
 		count = count + 1
 		$".".text = strings[(strings.size() - 1) % count]
 	pass

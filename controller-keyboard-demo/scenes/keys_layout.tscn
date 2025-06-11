@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://yyd8otfaarba"]
+[gd_scene load_steps=3 format=3 uid="uid://yyd8otfaarba"]
 
 [ext_resource type="Texture2D" uid="uid://bhcemda63xeok" path="res://addons/normal/normal_key.svg" id="1_wssee"]
+[ext_resource type="PackedScene" uid="uid://ybec3l4di3om" path="res://scenes/keyboard_pointer.tscn" id="2_h33td"]
 
 [node name="keys_layout" type="Node2D"]
 
@@ -9,32 +10,24 @@ offset_right = 1936.0
 offset_bottom = 592.0
 color = Color(0, 0, 0, 1)
 
-[node name="Control" type="Control" parent="."]
-layout_mode = 3
-anchors_preset = 0
-offset_left = 8.0
-offset_top = 8.0
-offset_right = 200.0
-offset_bottom = 200.0
+[node name="Area2D" type="Area2D" parent="." groups=["Q"]]
+position = Vector2(8, 8)
 metadata/_edit_group_ = true
 
-[node name="ColorRect" type="ColorRect" parent="Control"]
-layout_mode = 1
+[node name="ColorRect" type="ColorRect" parent="Area2D"]
 anchors_preset = -1
 anchor_right = 0.333333
 anchor_bottom = 0.333333
-offset_right = 128.0
-offset_bottom = 128.0
-color = Color(0.0754742, 0.188468, 0.309719, 1)
-metadata/_edit_use_anchors_ = true
+offset_right = 192.0
+offset_bottom = 192.0
+color = Color(0.305166, 0.538176, 0.794441, 1)
 
-[node name="Q" type="Sprite2D" parent="Control"]
+[node name="Q" type="Sprite2D" parent="Area2D"]
 position = Vector2(96.08, 96.1133)
 scale = Vector2(0.199833, 0.199972)
 texture = ExtResource("1_wssee")
 
-[node name="Label" type="Label" parent="Control"]
-layout_mode = 0
+[node name="Label" type="Label" parent="Area2D"]
 offset_right = 192.0
 offset_bottom = 192.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
@@ -45,32 +38,29 @@ text = "Q"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Control2" type="Control" parent="."]
-layout_mode = 3
-anchors_preset = 0
-offset_left = 200.0
-offset_top = 8.0
-offset_right = 392.0
-offset_bottom = 200.0
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
+position = Vector2(96, 96)
+scale = Vector2(0.125, 0.12513)
+polygon = PackedVector2Array(-480, -479.5, -480, 479.5, 480, 479.5, 480, -479.5)
+
+[node name="Area2D2" type="Area2D" parent="." groups=["W"]]
+position = Vector2(200, 8)
 metadata/_edit_group_ = true
 
-[node name="ColorRect" type="ColorRect" parent="Control2"]
-layout_mode = 1
+[node name="ColorRect" type="ColorRect" parent="Area2D2"]
 anchors_preset = -1
 anchor_right = 0.333333
 anchor_bottom = 0.333333
-offset_right = 128.0
-offset_bottom = 128.0
+offset_right = 192.0
+offset_bottom = 192.0
 color = Color(0.0754742, 0.188468, 0.309719, 1)
-metadata/_edit_use_anchors_ = true
 
-[node name="W" type="Sprite2D" parent="Control2"]
+[node name="W" type="Sprite2D" parent="Area2D2"]
 position = Vector2(96.08, 96.1133)
 scale = Vector2(0.199833, 0.199972)
 texture = ExtResource("1_wssee")
 
-[node name="Label" type="Label" parent="Control2"]
-layout_mode = 0
+[node name="Label" type="Label" parent="Area2D2"]
 offset_right = 192.0
 offset_bottom = 192.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
@@ -81,32 +71,29 @@ text = "W"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Control3" type="Control" parent="."]
-layout_mode = 3
-anchors_preset = 0
-offset_left = 392.0
-offset_top = 8.0
-offset_right = 584.0
-offset_bottom = 200.0
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D2"]
+position = Vector2(96, 96)
+scale = Vector2(0.125, 0.12513)
+polygon = PackedVector2Array(-480, -479.5, -480, 479.5, 480, 479.5, 480, -479.5)
+
+[node name="Area2D3" type="Area2D" parent="." groups=["E"]]
+position = Vector2(392, 8)
 metadata/_edit_group_ = true
 
-[node name="ColorRect" type="ColorRect" parent="Control3"]
-layout_mode = 1
+[node name="ColorRect" type="ColorRect" parent="Area2D3"]
 anchors_preset = -1
 anchor_right = 0.333333
 anchor_bottom = 0.333333
-offset_right = 128.0
-offset_bottom = 128.0
+offset_right = 192.0
+offset_bottom = 192.0
 color = Color(0.0754742, 0.188468, 0.309719, 1)
-metadata/_edit_use_anchors_ = true
 
-[node name="E" type="Sprite2D" parent="Control3"]
+[node name="E" type="Sprite2D" parent="Area2D3"]
 position = Vector2(96.08, 96.1133)
 scale = Vector2(0.199833, 0.199972)
 texture = ExtResource("1_wssee")
 
-[node name="Label" type="Label" parent="Control3"]
-layout_mode = 0
+[node name="Label" type="Label" parent="Area2D3"]
 offset_right = 192.0
 offset_bottom = 192.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
@@ -117,32 +104,29 @@ text = "E"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Control4" type="Control" parent="."]
-layout_mode = 3
-anchors_preset = 0
-offset_left = 584.0
-offset_top = 8.0
-offset_right = 776.0
-offset_bottom = 200.0
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D3"]
+position = Vector2(96, 96)
+scale = Vector2(0.125, 0.12513)
+polygon = PackedVector2Array(-480, -479.5, -480, 479.5, 480, 479.5, 480, -479.5)
+
+[node name="Area2D4" type="Area2D" parent="." groups=["R"]]
+position = Vector2(584, 8)
 metadata/_edit_group_ = true
 
-[node name="ColorRect" type="ColorRect" parent="Control4"]
-layout_mode = 1
+[node name="ColorRect" type="ColorRect" parent="Area2D4"]
 anchors_preset = -1
 anchor_right = 0.333333
 anchor_bottom = 0.333333
-offset_right = 128.0
-offset_bottom = 128.0
+offset_right = 192.0
+offset_bottom = 192.0
 color = Color(0.0754742, 0.188468, 0.309719, 1)
-metadata/_edit_use_anchors_ = true
 
-[node name="R" type="Sprite2D" parent="Control4"]
+[node name="R" type="Sprite2D" parent="Area2D4"]
 position = Vector2(96.08, 96.1133)
 scale = Vector2(0.199833, 0.199972)
 texture = ExtResource("1_wssee")
 
-[node name="Label" type="Label" parent="Control4"]
-layout_mode = 0
+[node name="Label" type="Label" parent="Area2D4"]
 offset_right = 192.0
 offset_bottom = 192.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
@@ -153,32 +137,29 @@ text = "R"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Control5" type="Control" parent="."]
-layout_mode = 3
-anchors_preset = 0
-offset_left = 776.0
-offset_top = 8.0
-offset_right = 968.0
-offset_bottom = 200.0
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D4"]
+position = Vector2(96, 96)
+scale = Vector2(0.125, 0.12513)
+polygon = PackedVector2Array(-480, -479.5, -480, 479.5, 480, 479.5, 480, -479.5)
+
+[node name="Area2D5" type="Area2D" parent="." groups=["T"]]
+position = Vector2(776, 8)
 metadata/_edit_group_ = true
 
-[node name="ColorRect" type="ColorRect" parent="Control5"]
-layout_mode = 1
+[node name="ColorRect" type="ColorRect" parent="Area2D5"]
 anchors_preset = -1
 anchor_right = 0.333333
 anchor_bottom = 0.333333
-offset_right = 128.0
-offset_bottom = 128.0
+offset_right = 192.0
+offset_bottom = 192.0
 color = Color(0.0754742, 0.188468, 0.309719, 1)
-metadata/_edit_use_anchors_ = true
 
-[node name="T" type="Sprite2D" parent="Control5"]
+[node name="T" type="Sprite2D" parent="Area2D5"]
 position = Vector2(96.08, 96.1133)
 scale = Vector2(0.199833, 0.199972)
 texture = ExtResource("1_wssee")
 
-[node name="Label" type="Label" parent="Control5"]
-layout_mode = 0
+[node name="Label" type="Label" parent="Area2D5"]
 offset_right = 192.0
 offset_bottom = 192.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
@@ -189,32 +170,29 @@ text = "T"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Control6" type="Control" parent="."]
-layout_mode = 3
-anchors_preset = 0
-offset_left = 968.0
-offset_top = 8.0
-offset_right = 1160.0
-offset_bottom = 200.0
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D5"]
+position = Vector2(96, 96)
+scale = Vector2(0.125, 0.12513)
+polygon = PackedVector2Array(-480, -479.5, -480, 479.5, 480, 479.5, 480, -479.5)
+
+[node name="Area2D6" type="Area2D" parent="." groups=["Y"]]
+position = Vector2(968, 8)
 metadata/_edit_group_ = true
 
-[node name="ColorRect" type="ColorRect" parent="Control6"]
-layout_mode = 1
+[node name="ColorRect" type="ColorRect" parent="Area2D6"]
 anchors_preset = -1
 anchor_right = 0.333333
 anchor_bottom = 0.333333
-offset_right = 128.0
-offset_bottom = 128.0
+offset_right = 192.0
+offset_bottom = 192.0
 color = Color(0.0754742, 0.188468, 0.309719, 1)
-metadata/_edit_use_anchors_ = true
 
-[node name="Y" type="Sprite2D" parent="Control6"]
+[node name="Y" type="Sprite2D" parent="Area2D6"]
 position = Vector2(96.08, 96.1133)
 scale = Vector2(0.199833, 0.199972)
 texture = ExtResource("1_wssee")
 
-[node name="Label" type="Label" parent="Control6"]
-layout_mode = 0
+[node name="Label" type="Label" parent="Area2D6"]
 offset_right = 192.0
 offset_bottom = 192.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
@@ -225,32 +203,29 @@ text = "Y"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Control7" type="Control" parent="."]
-layout_mode = 3
-anchors_preset = 0
-offset_left = 1160.0
-offset_top = 8.0
-offset_right = 1352.0
-offset_bottom = 200.0
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D6"]
+position = Vector2(96, 96)
+scale = Vector2(0.125, 0.12513)
+polygon = PackedVector2Array(-480, -479.5, -480, 479.5, 480, 479.5, 480, -479.5)
+
+[node name="Area2D7" type="Area2D" parent="." groups=["U"]]
+position = Vector2(1160, 8)
 metadata/_edit_group_ = true
 
-[node name="ColorRect" type="ColorRect" parent="Control7"]
-layout_mode = 1
+[node name="ColorRect" type="ColorRect" parent="Area2D7"]
 anchors_preset = -1
 anchor_right = 0.333333
 anchor_bottom = 0.333333
-offset_right = 128.0
-offset_bottom = 128.0
+offset_right = 192.0
+offset_bottom = 192.0
 color = Color(0.0754742, 0.188468, 0.309719, 1)
-metadata/_edit_use_anchors_ = true
 
-[node name="U" type="Sprite2D" parent="Control7"]
+[node name="U" type="Sprite2D" parent="Area2D7"]
 position = Vector2(96.08, 96.1133)
 scale = Vector2(0.199833, 0.199972)
 texture = ExtResource("1_wssee")
 
-[node name="Label" type="Label" parent="Control7"]
-layout_mode = 0
+[node name="Label" type="Label" parent="Area2D7"]
 offset_right = 192.0
 offset_bottom = 192.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
@@ -261,32 +236,29 @@ text = "U"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Control8" type="Control" parent="."]
-layout_mode = 3
-anchors_preset = 0
-offset_left = 1352.0
-offset_top = 8.0
-offset_right = 1544.0
-offset_bottom = 200.0
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D7"]
+position = Vector2(96, 96)
+scale = Vector2(0.125, 0.12513)
+polygon = PackedVector2Array(-480, -479.5, -480, 479.5, 480, 479.5, 480, -479.5)
+
+[node name="Area2D8" type="Area2D" parent="." groups=["I"]]
+position = Vector2(1352, 8)
 metadata/_edit_group_ = true
 
-[node name="ColorRect" type="ColorRect" parent="Control8"]
-layout_mode = 1
+[node name="ColorRect" type="ColorRect" parent="Area2D8"]
 anchors_preset = -1
 anchor_right = 0.333333
 anchor_bottom = 0.333333
-offset_right = 128.0
-offset_bottom = 128.0
+offset_right = 192.0
+offset_bottom = 192.0
 color = Color(0.0754742, 0.188468, 0.309719, 1)
-metadata/_edit_use_anchors_ = true
 
-[node name="I" type="Sprite2D" parent="Control8"]
+[node name="I" type="Sprite2D" parent="Area2D8"]
 position = Vector2(96.08, 96.1133)
 scale = Vector2(0.199833, 0.199972)
 texture = ExtResource("1_wssee")
 
-[node name="Label" type="Label" parent="Control8"]
-layout_mode = 0
+[node name="Label" type="Label" parent="Area2D8"]
 offset_right = 192.0
 offset_bottom = 192.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
@@ -297,32 +269,29 @@ text = "I"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Control9" type="Control" parent="."]
-layout_mode = 3
-anchors_preset = 0
-offset_left = 1544.0
-offset_top = 8.0
-offset_right = 1736.0
-offset_bottom = 200.0
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D8"]
+position = Vector2(96, 96)
+scale = Vector2(0.125, 0.12513)
+polygon = PackedVector2Array(-480, -479.5, -480, 479.5, 480, 479.5, 480, -479.5)
+
+[node name="Area2D9" type="Area2D" parent="." groups=["O"]]
+position = Vector2(1544, 8)
 metadata/_edit_group_ = true
 
-[node name="ColorRect" type="ColorRect" parent="Control9"]
-layout_mode = 1
+[node name="ColorRect" type="ColorRect" parent="Area2D9"]
 anchors_preset = -1
 anchor_right = 0.333333
 anchor_bottom = 0.333333
-offset_right = 128.0
-offset_bottom = 128.0
+offset_right = 192.0
+offset_bottom = 192.0
 color = Color(0.0754742, 0.188468, 0.309719, 1)
-metadata/_edit_use_anchors_ = true
 
-[node name="O" type="Sprite2D" parent="Control9"]
+[node name="O" type="Sprite2D" parent="Area2D9"]
 position = Vector2(96.08, 96.1133)
 scale = Vector2(0.199833, 0.199972)
 texture = ExtResource("1_wssee")
 
-[node name="Label" type="Label" parent="Control9"]
-layout_mode = 0
+[node name="Label" type="Label" parent="Area2D9"]
 offset_right = 192.0
 offset_bottom = 192.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
@@ -333,32 +302,29 @@ text = "O"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Control10" type="Control" parent="."]
-layout_mode = 3
-anchors_preset = 0
-offset_left = 1736.0
-offset_top = 8.0
-offset_right = 1928.0
-offset_bottom = 200.0
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D9"]
+position = Vector2(96, 96)
+scale = Vector2(0.125, 0.12513)
+polygon = PackedVector2Array(-480, -479.5, -480, 479.5, 480, 479.5, 480, -479.5)
+
+[node name="Area2D10" type="Area2D" parent="." groups=["P"]]
+position = Vector2(1736, 8)
 metadata/_edit_group_ = true
 
-[node name="ColorRect" type="ColorRect" parent="Control10"]
-layout_mode = 1
+[node name="ColorRect" type="ColorRect" parent="Area2D10"]
 anchors_preset = -1
 anchor_right = 0.333333
 anchor_bottom = 0.333333
-offset_right = 128.0
-offset_bottom = 128.0
+offset_right = 192.0
+offset_bottom = 192.0
 color = Color(0.0754742, 0.188468, 0.309719, 1)
-metadata/_edit_use_anchors_ = true
 
-[node name="P" type="Sprite2D" parent="Control10"]
+[node name="P" type="Sprite2D" parent="Area2D10"]
 position = Vector2(96.08, 96.1133)
 scale = Vector2(0.199833, 0.199972)
 texture = ExtResource("1_wssee")
 
-[node name="Label" type="Label" parent="Control10"]
-layout_mode = 0
+[node name="Label" type="Label" parent="Area2D10"]
 offset_right = 192.0
 offset_bottom = 192.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
@@ -369,32 +335,29 @@ text = "P"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Control11" type="Control" parent="."]
-layout_mode = 3
-anchors_preset = 0
-offset_left = 8.0
-offset_top = 200.0
-offset_right = 200.0
-offset_bottom = 392.0
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D10"]
+position = Vector2(96, 96)
+scale = Vector2(0.125, 0.12513)
+polygon = PackedVector2Array(-480, -479.5, -480, 479.5, 480, 479.5, 480, -479.5)
+
+[node name="Area2D11" type="Area2D" parent="." groups=["A"]]
+position = Vector2(8, 200)
 metadata/_edit_group_ = true
 
-[node name="ColorRect" type="ColorRect" parent="Control11"]
-layout_mode = 1
+[node name="ColorRect" type="ColorRect" parent="Area2D11"]
 anchors_preset = -1
 anchor_right = 0.333333
 anchor_bottom = 0.333333
-offset_right = 128.0
-offset_bottom = 128.0
+offset_right = 192.0
+offset_bottom = 192.0
 color = Color(0.0754742, 0.188468, 0.309719, 1)
-metadata/_edit_use_anchors_ = true
 
-[node name="A" type="Sprite2D" parent="Control11"]
+[node name="A" type="Sprite2D" parent="Area2D11"]
 position = Vector2(96.08, 96.1133)
 scale = Vector2(0.199833, 0.199972)
 texture = ExtResource("1_wssee")
 
-[node name="Label" type="Label" parent="Control11"]
-layout_mode = 0
+[node name="Label" type="Label" parent="Area2D11"]
 offset_right = 192.0
 offset_bottom = 192.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
@@ -405,32 +368,29 @@ text = "A"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Control12" type="Control" parent="."]
-layout_mode = 3
-anchors_preset = 0
-offset_left = 200.0
-offset_top = 200.0
-offset_right = 392.0
-offset_bottom = 392.0
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D11"]
+position = Vector2(96, 96)
+scale = Vector2(0.125, 0.12513)
+polygon = PackedVector2Array(-480, -479.5, -480, 479.5, 480, 479.5, 480, -479.5)
+
+[node name="Area2D12" type="Area2D" parent="." groups=["S"]]
+position = Vector2(200, 200)
 metadata/_edit_group_ = true
 
-[node name="ColorRect" type="ColorRect" parent="Control12"]
-layout_mode = 1
+[node name="ColorRect" type="ColorRect" parent="Area2D12"]
 anchors_preset = -1
 anchor_right = 0.333333
 anchor_bottom = 0.333333
-offset_right = 128.0
-offset_bottom = 128.0
+offset_right = 192.0
+offset_bottom = 192.0
 color = Color(0.0754742, 0.188468, 0.309719, 1)
-metadata/_edit_use_anchors_ = true
 
-[node name="S" type="Sprite2D" parent="Control12"]
+[node name="S" type="Sprite2D" parent="Area2D12"]
 position = Vector2(96.08, 96.1133)
 scale = Vector2(0.199833, 0.199972)
 texture = ExtResource("1_wssee")
 
-[node name="Label" type="Label" parent="Control12"]
-layout_mode = 0
+[node name="Label" type="Label" parent="Area2D12"]
 offset_right = 192.0
 offset_bottom = 192.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
@@ -441,32 +401,29 @@ text = "S"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Control13" type="Control" parent="."]
-layout_mode = 3
-anchors_preset = 0
-offset_left = 392.0
-offset_top = 200.0
-offset_right = 584.0
-offset_bottom = 392.0
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D12"]
+position = Vector2(96, 96)
+scale = Vector2(0.125, 0.12513)
+polygon = PackedVector2Array(-480, -479.5, -480, 479.5, 480, 479.5, 480, -479.5)
+
+[node name="Area2D13" type="Area2D" parent="." groups=["D"]]
+position = Vector2(392, 200)
 metadata/_edit_group_ = true
 
-[node name="ColorRect" type="ColorRect" parent="Control13"]
-layout_mode = 1
+[node name="ColorRect" type="ColorRect" parent="Area2D13"]
 anchors_preset = -1
 anchor_right = 0.333333
 anchor_bottom = 0.333333
-offset_right = 128.0
-offset_bottom = 128.0
+offset_right = 192.0
+offset_bottom = 192.0
 color = Color(0.0754742, 0.188468, 0.309719, 1)
-metadata/_edit_use_anchors_ = true
 
-[node name="D" type="Sprite2D" parent="Control13"]
+[node name="D" type="Sprite2D" parent="Area2D13"]
 position = Vector2(96.08, 96.1133)
 scale = Vector2(0.199833, 0.199972)
 texture = ExtResource("1_wssee")
 
-[node name="Label" type="Label" parent="Control13"]
-layout_mode = 0
+[node name="Label" type="Label" parent="Area2D13"]
 offset_right = 192.0
 offset_bottom = 192.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
@@ -477,32 +434,29 @@ text = "D"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Control14" type="Control" parent="."]
-layout_mode = 3
-anchors_preset = 0
-offset_left = 584.0
-offset_top = 200.0
-offset_right = 776.0
-offset_bottom = 392.0
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D13"]
+position = Vector2(96, 96)
+scale = Vector2(0.125, 0.12513)
+polygon = PackedVector2Array(-480, -479.5, -480, 479.5, 480, 479.5, 480, -479.5)
+
+[node name="Area2D14" type="Area2D" parent="." groups=["F"]]
+position = Vector2(584, 200)
 metadata/_edit_group_ = true
 
-[node name="ColorRect" type="ColorRect" parent="Control14"]
-layout_mode = 1
+[node name="ColorRect" type="ColorRect" parent="Area2D14"]
 anchors_preset = -1
 anchor_right = 0.333333
 anchor_bottom = 0.333333
-offset_right = 128.0
-offset_bottom = 128.0
+offset_right = 192.0
+offset_bottom = 192.0
 color = Color(0.0754742, 0.188468, 0.309719, 1)
-metadata/_edit_use_anchors_ = true
 
-[node name="F" type="Sprite2D" parent="Control14"]
+[node name="F" type="Sprite2D" parent="Area2D14"]
 position = Vector2(96.08, 96.1133)
 scale = Vector2(0.199833, 0.199972)
 texture = ExtResource("1_wssee")
 
-[node name="Label" type="Label" parent="Control14"]
-layout_mode = 0
+[node name="Label" type="Label" parent="Area2D14"]
 offset_right = 192.0
 offset_bottom = 192.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
@@ -513,32 +467,29 @@ text = "F"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Control15" type="Control" parent="."]
-layout_mode = 3
-anchors_preset = 0
-offset_left = 776.0
-offset_top = 200.0
-offset_right = 968.0
-offset_bottom = 392.0
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D14"]
+position = Vector2(96, 96)
+scale = Vector2(0.125, 0.12513)
+polygon = PackedVector2Array(-480, -479.5, -480, 479.5, 480, 479.5, 480, -479.5)
+
+[node name="Area2D15" type="Area2D" parent="." groups=["G"]]
+position = Vector2(776, 200)
 metadata/_edit_group_ = true
 
-[node name="ColorRect" type="ColorRect" parent="Control15"]
-layout_mode = 1
+[node name="ColorRect" type="ColorRect" parent="Area2D15"]
 anchors_preset = -1
 anchor_right = 0.333333
 anchor_bottom = 0.333333
-offset_right = 128.0
-offset_bottom = 128.0
+offset_right = 192.0
+offset_bottom = 192.0
 color = Color(0.0754742, 0.188468, 0.309719, 1)
-metadata/_edit_use_anchors_ = true
 
-[node name="G" type="Sprite2D" parent="Control15"]
+[node name="G" type="Sprite2D" parent="Area2D15"]
 position = Vector2(96.08, 96.1133)
 scale = Vector2(0.199833, 0.199972)
 texture = ExtResource("1_wssee")
 
-[node name="Label" type="Label" parent="Control15"]
-layout_mode = 0
+[node name="Label" type="Label" parent="Area2D15"]
 offset_right = 192.0
 offset_bottom = 192.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
@@ -549,32 +500,29 @@ text = "G"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Control16" type="Control" parent="."]
-layout_mode = 3
-anchors_preset = 0
-offset_left = 968.0
-offset_top = 200.0
-offset_right = 1160.0
-offset_bottom = 392.0
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D15"]
+position = Vector2(96, 96)
+scale = Vector2(0.125, 0.12513)
+polygon = PackedVector2Array(-480, -479.5, -480, 479.5, 480, 479.5, 480, -479.5)
+
+[node name="Area2D16" type="Area2D" parent="." groups=["H"]]
+position = Vector2(968, 200)
 metadata/_edit_group_ = true
 
-[node name="ColorRect" type="ColorRect" parent="Control16"]
-layout_mode = 1
+[node name="ColorRect" type="ColorRect" parent="Area2D16"]
 anchors_preset = -1
 anchor_right = 0.333333
 anchor_bottom = 0.333333
-offset_right = 128.0
-offset_bottom = 128.0
+offset_right = 192.0
+offset_bottom = 192.0
 color = Color(0.0754742, 0.188468, 0.309719, 1)
-metadata/_edit_use_anchors_ = true
 
-[node name="H" type="Sprite2D" parent="Control16"]
+[node name="H" type="Sprite2D" parent="Area2D16"]
 position = Vector2(96.08, 96.1133)
 scale = Vector2(0.199833, 0.199972)
 texture = ExtResource("1_wssee")
 
-[node name="Label" type="Label" parent="Control16"]
-layout_mode = 0
+[node name="Label" type="Label" parent="Area2D16"]
 offset_right = 192.0
 offset_bottom = 192.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
@@ -585,32 +533,29 @@ text = "H"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Control17" type="Control" parent="."]
-layout_mode = 3
-anchors_preset = 0
-offset_left = 1160.0
-offset_top = 200.0
-offset_right = 1352.0
-offset_bottom = 392.0
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D16"]
+position = Vector2(96, 96)
+scale = Vector2(0.125, 0.12513)
+polygon = PackedVector2Array(-480, -479.5, -480, 479.5, 480, 479.5, 480, -479.5)
+
+[node name="Area2D17" type="Area2D" parent="." groups=["J"]]
+position = Vector2(1160, 200)
 metadata/_edit_group_ = true
 
-[node name="ColorRect" type="ColorRect" parent="Control17"]
-layout_mode = 1
+[node name="ColorRect" type="ColorRect" parent="Area2D17"]
 anchors_preset = -1
 anchor_right = 0.333333
 anchor_bottom = 0.333333
-offset_right = 128.0
-offset_bottom = 128.0
+offset_right = 192.0
+offset_bottom = 192.0
 color = Color(0.0754742, 0.188468, 0.309719, 1)
-metadata/_edit_use_anchors_ = true
 
-[node name="J" type="Sprite2D" parent="Control17"]
+[node name="J" type="Sprite2D" parent="Area2D17"]
 position = Vector2(96.08, 96.1133)
 scale = Vector2(0.199833, 0.199972)
 texture = ExtResource("1_wssee")
 
-[node name="Label" type="Label" parent="Control17"]
-layout_mode = 0
+[node name="Label" type="Label" parent="Area2D17"]
 offset_right = 192.0
 offset_bottom = 192.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
@@ -621,32 +566,29 @@ text = "J"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Control18" type="Control" parent="."]
-layout_mode = 3
-anchors_preset = 0
-offset_left = 1352.0
-offset_top = 200.0
-offset_right = 1544.0
-offset_bottom = 392.0
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D17"]
+position = Vector2(96, 96)
+scale = Vector2(0.125, 0.12513)
+polygon = PackedVector2Array(-480, -479.5, -480, 479.5, 480, 479.5, 480, -479.5)
+
+[node name="Area2D18" type="Area2D" parent="." groups=["K"]]
+position = Vector2(1352, 200)
 metadata/_edit_group_ = true
 
-[node name="ColorRect" type="ColorRect" parent="Control18"]
-layout_mode = 1
+[node name="ColorRect" type="ColorRect" parent="Area2D18"]
 anchors_preset = -1
 anchor_right = 0.333333
 anchor_bottom = 0.333333
-offset_right = 128.0
-offset_bottom = 128.0
+offset_right = 192.0
+offset_bottom = 192.0
 color = Color(0.0754742, 0.188468, 0.309719, 1)
-metadata/_edit_use_anchors_ = true
 
-[node name="K" type="Sprite2D" parent="Control18"]
+[node name="K" type="Sprite2D" parent="Area2D18"]
 position = Vector2(96.08, 96.1133)
 scale = Vector2(0.199833, 0.199972)
 texture = ExtResource("1_wssee")
 
-[node name="Label" type="Label" parent="Control18"]
-layout_mode = 0
+[node name="Label" type="Label" parent="Area2D18"]
 offset_right = 192.0
 offset_bottom = 192.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
@@ -657,32 +599,29 @@ text = "K"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Control19" type="Control" parent="."]
-layout_mode = 3
-anchors_preset = 0
-offset_left = 1544.0
-offset_top = 200.0
-offset_right = 1736.0
-offset_bottom = 392.0
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D18"]
+position = Vector2(96, 96)
+scale = Vector2(0.125, 0.12513)
+polygon = PackedVector2Array(-480, -479.5, -480, 479.5, 480, 479.5, 480, -479.5)
+
+[node name="Area2D19" type="Area2D" parent="." groups=["L"]]
+position = Vector2(1544, 200)
 metadata/_edit_group_ = true
 
-[node name="ColorRect" type="ColorRect" parent="Control19"]
-layout_mode = 1
+[node name="ColorRect" type="ColorRect" parent="Area2D19"]
 anchors_preset = -1
 anchor_right = 0.333333
 anchor_bottom = 0.333333
-offset_right = 128.0
-offset_bottom = 128.0
+offset_right = 192.0
+offset_bottom = 192.0
 color = Color(0.0754742, 0.188468, 0.309719, 1)
-metadata/_edit_use_anchors_ = true
 
-[node name="L" type="Sprite2D" parent="Control19"]
+[node name="L" type="Sprite2D" parent="Area2D19"]
 position = Vector2(96.08, 96.1133)
 scale = Vector2(0.199833, 0.199972)
 texture = ExtResource("1_wssee")
 
-[node name="Label" type="Label" parent="Control19"]
-layout_mode = 0
+[node name="Label" type="Label" parent="Area2D19"]
 offset_right = 192.0
 offset_bottom = 192.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
@@ -693,37 +632,31 @@ text = "L"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Control20" type="Control" parent="."]
-layout_mode = 3
-anchors_preset = 0
-offset_left = 1736.0
-offset_top = 200.0
-offset_right = 1928.0
-offset_bottom = 392.0
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D19"]
+position = Vector2(96, 96)
+scale = Vector2(0.125, 0.12513)
+polygon = PackedVector2Array(-480, -479.5, -480, 479.5, 480, 479.5, 480, -479.5)
+
+[node name="Area2D20" type="Area2D" parent="." groups=["DEL"]]
+position = Vector2(1736, 200)
 metadata/_edit_group_ = true
 
-[node name="ColorRect" type="ColorRect" parent="Control20"]
-layout_mode = 1
+[node name="ColorRect" type="ColorRect" parent="Area2D20"]
 anchors_preset = -1
 anchor_right = 0.333333
 anchor_bottom = 0.333333
-offset_right = 128.0
-offset_bottom = 128.0
+offset_right = 192.0
+offset_bottom = 192.0
 color = Color(0.0754742, 0.188468, 0.309719, 1)
-metadata/_edit_use_anchors_ = true
 
-[node name="DEL" type="Sprite2D" parent="Control20"]
-position = Vector2(96, 96.0001)
-scale = Vector2(0.2, 0.200208)
+[node name="DEL" type="Sprite2D" parent="Area2D20"]
+position = Vector2(96.08, 96.1133)
+scale = Vector2(0.199833, 0.199972)
 texture = ExtResource("1_wssee")
 
-[node name="Label" type="Label" parent="Control20"]
-layout_mode = 1
-anchors_preset = -1
-anchor_right = 0.333333
-anchor_bottom = 0.333333
-offset_right = 128.0
-offset_bottom = 128.0
+[node name="Label" type="Label" parent="Area2D20"]
+offset_right = 192.0
+offset_bottom = 192.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 5
@@ -731,34 +664,30 @@ theme_override_font_sizes/font_size = 64
 text = "DEL"
 horizontal_alignment = 1
 vertical_alignment = 1
-metadata/_edit_use_anchors_ = true
 
-[node name="Control21" type="Control" parent="."]
-layout_mode = 3
-anchors_preset = 0
-offset_left = 8.0
-offset_top = 392.0
-offset_right = 200.0
-offset_bottom = 584.0
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D20"]
+position = Vector2(96, 96)
+scale = Vector2(0.125, 0.12513)
+polygon = PackedVector2Array(-480, -479.5, -480, 479.5, 480, 479.5, 480, -479.5)
+
+[node name="Area2D21" type="Area2D" parent="." groups=["Z"]]
+position = Vector2(8, 392)
 metadata/_edit_group_ = true
 
-[node name="ColorRect" type="ColorRect" parent="Control21"]
-layout_mode = 1
+[node name="ColorRect" type="ColorRect" parent="Area2D21"]
 anchors_preset = -1
 anchor_right = 0.333333
 anchor_bottom = 0.333333
-offset_right = 128.0
-offset_bottom = 128.0
+offset_right = 192.0
+offset_bottom = 192.0
 color = Color(0.0754742, 0.188468, 0.309719, 1)
-metadata/_edit_use_anchors_ = true
 
-[node name="Z" type="Sprite2D" parent="Control21"]
+[node name="Z" type="Sprite2D" parent="Area2D21"]
 position = Vector2(96.08, 96.1133)
 scale = Vector2(0.199833, 0.199972)
 texture = ExtResource("1_wssee")
 
-[node name="Label" type="Label" parent="Control21"]
-layout_mode = 0
+[node name="Label" type="Label" parent="Area2D21"]
 offset_right = 192.0
 offset_bottom = 192.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
@@ -769,32 +698,29 @@ text = "Z"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Control22" type="Control" parent="."]
-layout_mode = 3
-anchors_preset = 0
-offset_left = 200.0
-offset_top = 392.0
-offset_right = 392.0
-offset_bottom = 584.0
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D21"]
+position = Vector2(96, 96)
+scale = Vector2(0.125, 0.12513)
+polygon = PackedVector2Array(-480, -479.5, -480, 479.5, 480, 479.5, 480, -479.5)
+
+[node name="Area2D22" type="Area2D" parent="." groups=["X"]]
+position = Vector2(200, 392)
 metadata/_edit_group_ = true
 
-[node name="ColorRect" type="ColorRect" parent="Control22"]
-layout_mode = 1
+[node name="ColorRect" type="ColorRect" parent="Area2D22"]
 anchors_preset = -1
 anchor_right = 0.333333
 anchor_bottom = 0.333333
-offset_right = 128.0
-offset_bottom = 128.0
+offset_right = 192.0
+offset_bottom = 192.0
 color = Color(0.0754742, 0.188468, 0.309719, 1)
-metadata/_edit_use_anchors_ = true
 
-[node name="X" type="Sprite2D" parent="Control22"]
+[node name="X" type="Sprite2D" parent="Area2D22"]
 position = Vector2(96.08, 96.1133)
 scale = Vector2(0.199833, 0.199972)
 texture = ExtResource("1_wssee")
 
-[node name="Label" type="Label" parent="Control22"]
-layout_mode = 0
+[node name="Label" type="Label" parent="Area2D22"]
 offset_right = 192.0
 offset_bottom = 192.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
@@ -805,32 +731,29 @@ text = "X"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Control23" type="Control" parent="."]
-layout_mode = 3
-anchors_preset = 0
-offset_left = 392.0
-offset_top = 392.0
-offset_right = 584.0
-offset_bottom = 584.0
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D22"]
+position = Vector2(96, 96)
+scale = Vector2(0.125, 0.12513)
+polygon = PackedVector2Array(-480, -479.5, -480, 479.5, 480, 479.5, 480, -479.5)
+
+[node name="Area2D23" type="Area2D" parent="." groups=["C"]]
+position = Vector2(392, 392)
 metadata/_edit_group_ = true
 
-[node name="ColorRect" type="ColorRect" parent="Control23"]
-layout_mode = 1
+[node name="ColorRect" type="ColorRect" parent="Area2D23"]
 anchors_preset = -1
 anchor_right = 0.333333
 anchor_bottom = 0.333333
-offset_right = 128.0
-offset_bottom = 128.0
+offset_right = 192.0
+offset_bottom = 192.0
 color = Color(0.0754742, 0.188468, 0.309719, 1)
-metadata/_edit_use_anchors_ = true
 
-[node name="C" type="Sprite2D" parent="Control23"]
+[node name="C" type="Sprite2D" parent="Area2D23"]
 position = Vector2(96.08, 96.1133)
 scale = Vector2(0.199833, 0.199972)
 texture = ExtResource("1_wssee")
 
-[node name="Label" type="Label" parent="Control23"]
-layout_mode = 0
+[node name="Label" type="Label" parent="Area2D23"]
 offset_right = 192.0
 offset_bottom = 192.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
@@ -841,32 +764,29 @@ text = "C"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Control24" type="Control" parent="."]
-layout_mode = 3
-anchors_preset = 0
-offset_left = 584.0
-offset_top = 392.0
-offset_right = 776.0
-offset_bottom = 584.0
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D23"]
+position = Vector2(96, 96)
+scale = Vector2(0.125, 0.12513)
+polygon = PackedVector2Array(-480, -479.5, -480, 479.5, 480, 479.5, 480, -479.5)
+
+[node name="Area2D24" type="Area2D" parent="." groups=["V"]]
+position = Vector2(584, 392)
 metadata/_edit_group_ = true
 
-[node name="ColorRect" type="ColorRect" parent="Control24"]
-layout_mode = 1
+[node name="ColorRect" type="ColorRect" parent="Area2D24"]
 anchors_preset = -1
 anchor_right = 0.333333
 anchor_bottom = 0.333333
-offset_right = 128.0
-offset_bottom = 128.0
+offset_right = 192.0
+offset_bottom = 192.0
 color = Color(0.0754742, 0.188468, 0.309719, 1)
-metadata/_edit_use_anchors_ = true
 
-[node name="V" type="Sprite2D" parent="Control24"]
+[node name="V" type="Sprite2D" parent="Area2D24"]
 position = Vector2(96.08, 96.1133)
 scale = Vector2(0.199833, 0.199972)
 texture = ExtResource("1_wssee")
 
-[node name="Label" type="Label" parent="Control24"]
-layout_mode = 0
+[node name="Label" type="Label" parent="Area2D24"]
 offset_right = 192.0
 offset_bottom = 192.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
@@ -877,32 +797,29 @@ text = "V"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Control25" type="Control" parent="."]
-layout_mode = 3
-anchors_preset = 0
-offset_left = 776.0
-offset_top = 392.0
-offset_right = 968.0
-offset_bottom = 584.0
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D24"]
+position = Vector2(96, 96)
+scale = Vector2(0.125, 0.12513)
+polygon = PackedVector2Array(-480, -479.5, -480, 479.5, 480, 479.5, 480, -479.5)
+
+[node name="Area2D25" type="Area2D" parent="." groups=["B"]]
+position = Vector2(776, 392)
 metadata/_edit_group_ = true
 
-[node name="ColorRect" type="ColorRect" parent="Control25"]
-layout_mode = 1
+[node name="ColorRect" type="ColorRect" parent="Area2D25"]
 anchors_preset = -1
 anchor_right = 0.333333
 anchor_bottom = 0.333333
-offset_right = 128.0
-offset_bottom = 128.0
+offset_right = 192.0
+offset_bottom = 192.0
 color = Color(0.0754742, 0.188468, 0.309719, 1)
-metadata/_edit_use_anchors_ = true
 
-[node name="B" type="Sprite2D" parent="Control25"]
+[node name="B" type="Sprite2D" parent="Area2D25"]
 position = Vector2(96.08, 96.1133)
 scale = Vector2(0.199833, 0.199972)
 texture = ExtResource("1_wssee")
 
-[node name="Label" type="Label" parent="Control25"]
-layout_mode = 0
+[node name="Label" type="Label" parent="Area2D25"]
 offset_right = 192.0
 offset_bottom = 192.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
@@ -913,32 +830,29 @@ text = "B"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Control26" type="Control" parent="."]
-layout_mode = 3
-anchors_preset = 0
-offset_left = 968.0
-offset_top = 392.0
-offset_right = 1160.0
-offset_bottom = 584.0
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D25"]
+position = Vector2(96, 96)
+scale = Vector2(0.125, 0.12513)
+polygon = PackedVector2Array(-480, -479.5, -480, 479.5, 480, 479.5, 480, -479.5)
+
+[node name="Area2D26" type="Area2D" parent="." groups=["N"]]
+position = Vector2(968, 392)
 metadata/_edit_group_ = true
 
-[node name="ColorRect" type="ColorRect" parent="Control26"]
-layout_mode = 1
+[node name="ColorRect" type="ColorRect" parent="Area2D26"]
 anchors_preset = -1
 anchor_right = 0.333333
 anchor_bottom = 0.333333
-offset_right = 128.0
-offset_bottom = 128.0
+offset_right = 192.0
+offset_bottom = 192.0
 color = Color(0.0754742, 0.188468, 0.309719, 1)
-metadata/_edit_use_anchors_ = true
 
-[node name="N" type="Sprite2D" parent="Control26"]
+[node name="N" type="Sprite2D" parent="Area2D26"]
 position = Vector2(96.08, 96.1133)
 scale = Vector2(0.199833, 0.199972)
 texture = ExtResource("1_wssee")
 
-[node name="Label" type="Label" parent="Control26"]
-layout_mode = 0
+[node name="Label" type="Label" parent="Area2D26"]
 offset_right = 192.0
 offset_bottom = 192.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
@@ -949,32 +863,29 @@ text = "N"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Control27" type="Control" parent="."]
-layout_mode = 3
-anchors_preset = 0
-offset_left = 1160.0
-offset_top = 392.0
-offset_right = 1352.0
-offset_bottom = 584.0
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D26"]
+position = Vector2(96, 96)
+scale = Vector2(0.125, 0.12513)
+polygon = PackedVector2Array(-480, -479.5, -480, 479.5, 480, 479.5, 480, -479.5)
+
+[node name="Area2D27" type="Area2D" parent="." groups=["M"]]
+position = Vector2(1160, 392)
 metadata/_edit_group_ = true
 
-[node name="ColorRect" type="ColorRect" parent="Control27"]
-layout_mode = 1
+[node name="ColorRect" type="ColorRect" parent="Area2D27"]
 anchors_preset = -1
 anchor_right = 0.333333
 anchor_bottom = 0.333333
-offset_right = 128.0
-offset_bottom = 128.0
+offset_right = 192.0
+offset_bottom = 192.0
 color = Color(0.0754742, 0.188468, 0.309719, 1)
-metadata/_edit_use_anchors_ = true
 
-[node name="M" type="Sprite2D" parent="Control27"]
+[node name="M" type="Sprite2D" parent="Area2D27"]
 position = Vector2(96.08, 96.1133)
 scale = Vector2(0.199833, 0.199972)
 texture = ExtResource("1_wssee")
 
-[node name="Label" type="Label" parent="Control27"]
-layout_mode = 0
+[node name="Label" type="Label" parent="Area2D27"]
 offset_right = 192.0
 offset_bottom = 192.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
@@ -985,37 +896,31 @@ text = "M"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Control28" type="Control" parent="."]
-layout_mode = 3
-anchors_preset = 0
-offset_left = 1352.0
-offset_top = 392.0
-offset_right = 1736.0
-offset_bottom = 584.0
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D27"]
+position = Vector2(96, 96)
+scale = Vector2(0.125, 0.12513)
+polygon = PackedVector2Array(-480, -479.5, -480, 479.5, 480, 479.5, 480, -479.5)
+
+[node name="Area2D28" type="Area2D" parent="." groups=["Space"]]
+position = Vector2(1352, 392)
 metadata/_edit_group_ = true
 
-[node name="ColorRect" type="ColorRect" parent="Control28"]
-layout_mode = 1
-anchors_preset = -1
-anchor_right = 0.666667
-anchor_bottom = 0.333333
-offset_right = 128.0
-offset_bottom = 128.0
-color = Color(0.0754742, 0.188468, 0.309719, 1)
-metadata/_edit_use_anchors_ = true
-
-[node name="Space" type="Sprite2D" parent="Control28"]
-position = Vector2(192, 96.0001)
-scale = Vector2(0.4, 0.200208)
-texture = ExtResource("1_wssee")
-
-[node name="Label" type="Label" parent="Control28"]
-layout_mode = 1
+[node name="ColorRect" type="ColorRect" parent="Area2D28"]
 anchors_preset = -1
 anchor_right = 0.333333
 anchor_bottom = 0.333333
-offset_right = 256.0
-offset_bottom = 128.0
+offset_right = 384.0
+offset_bottom = 192.0
+color = Color(0.0754742, 0.188468, 0.309719, 1)
+
+[node name="Space" type="Sprite2D" parent="Area2D28"]
+position = Vector2(192.08, 96.1133)
+scale = Vector2(0.399833, 0.199972)
+texture = ExtResource("1_wssee")
+
+[node name="Label" type="Label" parent="Area2D28"]
+offset_right = 384.0
+offset_bottom = 192.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 5
@@ -1023,39 +928,32 @@ theme_override_font_sizes/font_size = 72
 text = "Space"
 horizontal_alignment = 1
 vertical_alignment = 1
-metadata/_edit_use_anchors_ = true
 
-[node name="Control30" type="Control" parent="."]
-layout_mode = 3
-anchors_preset = 0
-offset_left = 1736.0
-offset_top = 392.0
-offset_right = 1928.0
-offset_bottom = 584.0
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D28"]
+position = Vector2(192, 96)
+scale = Vector2(0.25, 0.12513)
+polygon = PackedVector2Array(-480, -479.5, -480, 479.5, 480, 479.5, 480, -479.5)
+
+[node name="Area2D30" type="Area2D" parent="." groups=["NEXT"]]
+position = Vector2(1736, 392)
 metadata/_edit_group_ = true
 
-[node name="ColorRect" type="ColorRect" parent="Control30"]
-layout_mode = 1
+[node name="ColorRect" type="ColorRect" parent="Area2D30"]
 anchors_preset = -1
 anchor_right = 0.333333
 anchor_bottom = 0.333333
-offset_right = 128.0
-offset_bottom = 128.0
+offset_right = 192.0
+offset_bottom = 192.0
 color = Color(0.0754742, 0.188468, 0.309719, 1)
-metadata/_edit_use_anchors_ = true
 
-[node name="NEXT" type="Sprite2D" parent="Control30"]
-position = Vector2(96, 96.0001)
-scale = Vector2(0.2, 0.200208)
+[node name="NEXT" type="Sprite2D" parent="Area2D30"]
+position = Vector2(96.08, 96.1133)
+scale = Vector2(0.199833, 0.199972)
 texture = ExtResource("1_wssee")
 
-[node name="Label" type="Label" parent="Control30"]
-layout_mode = 1
-anchors_preset = -1
-anchor_right = 0.333333
-anchor_bottom = 0.333333
-offset_right = 128.0
-offset_bottom = 128.0
+[node name="Label" type="Label" parent="Area2D30"]
+offset_right = 192.0
+offset_bottom = 192.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 5
@@ -1063,4 +961,11 @@ theme_override_font_sizes/font_size = 64
 text = "NEXT"
 horizontal_alignment = 1
 vertical_alignment = 1
-metadata/_edit_use_anchors_ = true
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D30"]
+position = Vector2(96, 96)
+scale = Vector2(0.125, 0.12513)
+polygon = PackedVector2Array(-480, -479.5, -480, 479.5, 480, 479.5, 480, -479.5)
+
+[node name="keyboard_pointer" parent="." instance=ExtResource("2_h33td")]
+position = Vector2(16, 16)

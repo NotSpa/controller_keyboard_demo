@@ -388,7 +388,6 @@ middle_mouse_paste_enabled = false
 empty_selection_clipboard_enabled = false
 caret_move_on_right_click = false
 caret_multiple = false
-draw_control_chars = true
 script = ExtResource("6_4sf85")
 
 [node name="Timer" type="Timer" parent="."]
