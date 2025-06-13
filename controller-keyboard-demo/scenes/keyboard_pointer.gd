@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 @onready var parent = $".."
 
-func _physics_process(delta: float) -> void:
+func _physics_process(_delta: float) -> void:
 	pass
 
 

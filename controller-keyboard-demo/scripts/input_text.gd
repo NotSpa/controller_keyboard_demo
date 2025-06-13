@@ -8,7 +8,7 @@ func _ready() -> void:
 	InputMap.action_set_deadzone("r2", 0.1)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	if Input.is_action_just_released("r2"):
 		$".".text = ""
 	if Input.is_action_just_pressed("Y"):

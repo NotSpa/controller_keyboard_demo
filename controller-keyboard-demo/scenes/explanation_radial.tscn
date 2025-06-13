@@ -1,0 +1,65 @@
+[gd_scene load_steps=5 format=3 uid="uid://blmkx8ksfcp0"]
+
+[ext_resource type="Script" uid="uid://b7ind7hlckkou" path="res://scenes/explanation_radial.gd" id="1_x6ikk"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x6ikk"]
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_blgl0"]
+bg_color = Color(0.565915, 0.85607, 0.871032, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r2o8d"]
+bg_color = Color(0.133196, 0.133196, 0.133196, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[node name="explanation_radial" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_x6ikk")
+
+[node name="Background3" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 2048.0
+offset_bottom = 1080.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color(0.841827, 0.845627, 0.917834, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(1025, 540)
+
+[node name="Label" type="Label" parent="."]
+offset_left = 320.0
+offset_right = 1728.0
+offset_bottom = 832.0
+
+[node name="ok" type="Button" parent="."]
+offset_left = 960.0
+offset_top = 896.0
+offset_right = 1088.0
+offset_bottom = 961.0
+size_flags_vertical = 2
+focus_neighbor_left = NodePath(".")
+focus_neighbor_top = NodePath(".")
+focus_neighbor_right = NodePath(".")
+focus_neighbor_bottom = NodePath(".")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/disabled = SubResource("StyleBoxFlat_x6ikk")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_blgl0")
+theme_override_styles/normal = SubResource("StyleBoxFlat_r2o8d")
+text = "OK"
+
+[connection signal="pressed" from="ok" to="." method="_on_ok_pressed"]

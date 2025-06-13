@@ -1,0 +1,69 @@
+[gd_scene load_steps=5 format=3 uid="uid://bw37c5s7ei13e"]
+
+[ext_resource type="Script" uid="uid://dma544gd0bmgc" path="res://scenes/prep_2_nd_normal.gd" id="1_gbyy1"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gbyy1"]
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fxl0l"]
+bg_color = Color(0.565915, 0.85607, 0.871032, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u6c8o"]
+bg_color = Color(0.133196, 0.133196, 0.133196, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[node name="prep2ndNormal" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_gbyy1")
+
+[node name="Background3" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 2048.0
+offset_bottom = 1080.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color(0.841827, 0.845627, 0.917834, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(1025, 540)
+
+[node name="Label" type="Label" parent="."]
+offset_left = 320.0
+offset_right = 1728.0
+offset_bottom = 832.0
+
+[node name="ok" type="Button" parent="."]
+offset_left = 960.0
+offset_top = 896.0
+offset_right = 1088.0
+offset_bottom = 961.0
+size_flags_vertical = 2
+focus_neighbor_left = NodePath(".")
+focus_neighbor_top = NodePath(".")
+focus_neighbor_right = NodePath(".")
+focus_neighbor_bottom = NodePath(".")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/disabled = SubResource("StyleBoxFlat_gbyy1")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_fxl0l")
+theme_override_styles/normal = SubResource("StyleBoxFlat_u6c8o")
+text = "OK"
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="pressed" from="ok" to="." method="_on_ok_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

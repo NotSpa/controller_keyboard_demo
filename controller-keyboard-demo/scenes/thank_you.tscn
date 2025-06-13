@@ -1,0 +1,64 @@
+[gd_scene load_steps=5 format=3 uid="uid://d1mh5exp5ujqf"]
+
+[ext_resource type="Script" uid="uid://cmkd466kn8hhl" path="res://scenes/thank_you.gd" id="1_6f772"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6f772"]
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7dc2l"]
+bg_color = Color(0.565915, 0.85607, 0.871032, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0iwpd"]
+bg_color = Color(0.133196, 0.133196, 0.133196, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[node name="ThankYou" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_6f772")
+
+[node name="Background2" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 2048.0
+offset_bottom = 1080.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color(0.689797, 0.895737, 0.920642, 1)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(1025, 540)
+
+[node name="Label" type="Label" parent="."]
+offset_left = 320.0
+offset_right = 1728.0
+offset_bottom = 832.0
+
+[node name="exit" type="Button" parent="."]
+offset_left = 960.0
+offset_top = 896.0
+offset_right = 1088.0
+offset_bottom = 961.0
+size_flags_vertical = 2
+focus_neighbor_left = NodePath("../exit")
+focus_neighbor_top = NodePath("../exit")
+focus_neighbor_right = NodePath("../exit")
+focus_neighbor_bottom = NodePath("../exit")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/disabled = SubResource("StyleBoxFlat_6f772")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_7dc2l")
+theme_override_styles/normal = SubResource("StyleBoxFlat_0iwpd")
+text = "EXIT"
+
+[connection signal="pressed" from="exit" to="." method="_on_exit_pressed"]

@@ -34,7 +34,7 @@ func _process(delta: float):
 	else:
 		global_position = lerp(global_position, parent.global_position, delta * 8)
 	
-func _physics_process(delta: float):
+func _physics_process(_delta: float):
 	move_and_collide(move_input * speed)
 
 func _on_area_2d_area_entered(area: Area2D) -> void:
