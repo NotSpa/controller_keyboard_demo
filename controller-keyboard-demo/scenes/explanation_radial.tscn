@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://blmkx8ksfcp0"]
+[gd_scene load_steps=6 format=3 uid="uid://blmkx8ksfcp0"]
 
 [ext_resource type="Script" uid="uid://b7ind7hlckkou" path="res://scenes/explanation_radial.gd" id="1_x6ikk"]
+[ext_resource type="Texture2D" uid="uid://dd2tivm0knh6f" path="res://addons/controller_buttons/button_A_2.svg" id="2_blgl0"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x6ikk"]
 corner_radius_top_left = 10
@@ -40,11 +41,24 @@ metadata/_edit_use_anchors_ = true
 position = Vector2(1025, 540)
 
 [node name="Label" type="Label" parent="."]
+layout_mode = 0
 offset_left = 320.0
 offset_right = 1728.0
 offset_bottom = 832.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+text = "The following layout is the new Version I propose.
+You will see two radial menus on either side of the screen.
+To type a letter use the left and right stick.
+Press the stick all the way in the direction of the letter and release it to type.
+To delete the last letter press the X button (Square on PS).
+To type a space press the Y button (Tringale on PS).
+After you finished typing a sentence you need to press the R2 button.
+You will have 4 minutes to type as many sentences as you can.
+Try and be as precise and accurate as possible."
 
 [node name="ok" type="Button" parent="."]
+layout_mode = 0
 offset_left = 960.0
 offset_top = 896.0
 offset_right = 1088.0
@@ -61,5 +75,10 @@ theme_override_styles/disabled = SubResource("StyleBoxFlat_x6ikk")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_blgl0")
 theme_override_styles/normal = SubResource("StyleBoxFlat_r2o8d")
 text = "OK"
+
+[node name="ButtonA2" type="Sprite2D" parent="."]
+position = Vector2(1088, 904)
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("2_blgl0")
 
 [connection signal="pressed" from="ok" to="." method="_on_ok_pressed"]

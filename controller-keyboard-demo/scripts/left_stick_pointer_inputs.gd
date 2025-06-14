@@ -49,32 +49,32 @@ func unblockLeft():
 func _on_left_input_area_exited(area: Area2D) -> void:
 	var input_string = ""
 	if !block_left:
-		if area.is_in_group("Q"):
-			input_string = "Q"
-		elif area.is_in_group("W"):
-			input_string = "W"
-		elif area.is_in_group("E"):
-			input_string = "E"
-		elif area.is_in_group("R"):
-			input_string = "R"
-		elif area.is_in_group("T"):
-			input_string = "T"
-		elif area.is_in_group("Y"):
-			input_string = "Y"
-		elif area.is_in_group("A"):
+		if area.is_in_group("A"):
 			input_string = "A"
-		elif area.is_in_group("S"):
-			input_string = "S"
-		elif area.is_in_group("D"):
-			input_string = "D"
-		elif area.is_in_group("F"):
-			input_string = "F"
-		elif area.is_in_group("Z"):
-			input_string = "Z"
-		elif area.is_in_group("X"):
-			input_string = "X"
+		elif area.is_in_group("B"):
+			input_string = "B"
 		elif area.is_in_group("C"):
 			input_string = "C"
+		elif area.is_in_group("D"):
+			input_string = "D"
+		elif area.is_in_group("E"):
+			input_string = "E"
+		elif area.is_in_group("F"):
+			input_string = "F"
+		elif area.is_in_group("G"):
+			input_string = "G"
+		elif area.is_in_group("H"):
+			input_string = "H"
+		elif area.is_in_group("I"):
+			input_string = "I"
+		elif area.is_in_group("J"):
+			input_string = "J"
+		elif area.is_in_group("K"):
+			input_string = "K"
+		elif area.is_in_group("L"):
+			input_string = "L"
+		elif area.is_in_group("M"):
+			input_string = "M"
 		blockLeft()
 		textField.text += input_string
 

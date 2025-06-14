@@ -18,7 +18,7 @@ func _process(_delta: float) -> void:
 	if Input.is_action_just_released("Y"):
 		$"../Del".color = Color(1,1,1)
 	if Input.is_action_just_pressed("X"):
-		$".".text = $".".text + " "
+		$".".text = $".".text + "_"
 		$"../Spacebar".color = Color(0,0.2,0.75,0.5)
 	if Input.is_action_just_released("X"):
 		$"../Spacebar".color = Color(1,1,1)

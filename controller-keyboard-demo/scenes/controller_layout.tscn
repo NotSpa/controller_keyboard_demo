@@ -36,7 +36,7 @@ position = Vector2(1025, 540)
 position = Vector2(1634.47, 750)
 scale = Vector2(1.25, 1.25)
 
-[node name="area_1" type="Area2D" parent="right_radial_menu" groups=["U"]]
+[node name="area_1" type="Area2D" parent="right_radial_menu" groups=["N"]]
 collision_layer = 2
 collision_mask = 2
 
@@ -49,7 +49,7 @@ position = Vector2(0, -223)
 rotation = 1.5708
 shape = SubResource("CapsuleShape2D_juc2q")
 
-[node name="area_2" type="Area2D" parent="right_radial_menu" groups=["I"]]
+[node name="area_2" type="Area2D" parent="right_radial_menu" groups=["Z"]]
 collision_layer = 2
 collision_mask = 2
 
@@ -60,7 +60,7 @@ position = Vector2(104, -197)
 rotation = 2.04902
 shape = SubResource("CapsuleShape2D_juc2q")
 
-[node name="area_3" type="Area2D" parent="right_radial_menu" groups=["O"]]
+[node name="area_3" type="Area2D" parent="right_radial_menu" groups=["Y"]]
 collision_layer = 2
 collision_mask = 2
 
@@ -71,7 +71,7 @@ position = Vector2(184, -127)
 rotation = -0.593412
 shape = SubResource("CapsuleShape2D_juc2q")
 
-[node name="area_4" type="Area2D" parent="right_radial_menu" groups=["P"]]
+[node name="area_4" type="Area2D" parent="right_radial_menu" groups=["X"]]
 collision_layer = 2
 collision_mask = 2
 
@@ -82,7 +82,7 @@ position = Vector2(221.5, -27)
 rotation = -0.10472
 shape = SubResource("CapsuleShape2D_juc2q")
 
-[node name="area_5" type="Area2D" parent="right_radial_menu" groups=["G"]]
+[node name="area_5" type="Area2D" parent="right_radial_menu" groups=["W"]]
 collision_layer = 2
 collision_mask = 2
 
@@ -93,7 +93,7 @@ position = Vector2(209, 78)
 rotation = 0.392699
 shape = SubResource("CapsuleShape2D_juc2q")
 
-[node name="area_6" type="Area2D" parent="right_radial_menu" groups=["H"]]
+[node name="area_6" type="Area2D" parent="right_radial_menu" groups=["V"]]
 collision_layer = 2
 collision_mask = 2
 
@@ -104,7 +104,7 @@ position = Vector2(148, 167)
 rotation = 0.846485
 shape = SubResource("CapsuleShape2D_juc2q")
 
-[node name="area_7" type="Area2D" parent="right_radial_menu" groups=["J"]]
+[node name="area_7" type="Area2D" parent="right_radial_menu" groups=["U"]]
 collision_layer = 2
 collision_mask = 2
 
@@ -115,7 +115,7 @@ position = Vector2(54, 216.5)
 rotation = 1.3439
 shape = SubResource("CapsuleShape2D_juc2q")
 
-[node name="area_8" type="Area2D" parent="right_radial_menu" groups=["K"]]
+[node name="area_8" type="Area2D" parent="right_radial_menu" groups=["T"]]
 collision_layer = 2
 collision_mask = 2
 
@@ -126,7 +126,7 @@ position = Vector2(-52.5, 217)
 rotation = 1.81514
 shape = SubResource("CapsuleShape2D_juc2q")
 
-[node name="area_9" type="Area2D" parent="right_radial_menu" groups=["L"]]
+[node name="area_9" type="Area2D" parent="right_radial_menu" groups=["S"]]
 collision_layer = 2
 collision_mask = 2
 
@@ -137,7 +137,7 @@ position = Vector2(-148, 167)
 rotation = 2.27765
 shape = SubResource("CapsuleShape2D_juc2q")
 
-[node name="area_10" type="Area2D" parent="right_radial_menu" groups=["V"]]
+[node name="area_10" type="Area2D" parent="right_radial_menu" groups=["R"]]
 collision_layer = 2
 collision_mask = 2
 
@@ -147,7 +147,7 @@ position = Vector2(-207, 81)
 rotation = -0.331613
 shape = SubResource("CapsuleShape2D_juc2q")
 
-[node name="area_11" type="Area2D" parent="right_radial_menu" groups=["B"]]
+[node name="area_11" type="Area2D" parent="right_radial_menu" groups=["Q"]]
 collision_layer = 2
 collision_mask = 2
 
@@ -157,7 +157,7 @@ position = Vector2(-222, -27)
 rotation = 0.1309
 shape = SubResource("CapsuleShape2D_juc2q")
 
-[node name="area_12" type="Area2D" parent="right_radial_menu" groups=["N"]]
+[node name="area_12" type="Area2D" parent="right_radial_menu" groups=["P"]]
 collision_layer = 2
 collision_mask = 2
 
@@ -167,7 +167,7 @@ position = Vector2(-184, -126)
 rotation = 0.612611
 shape = SubResource("CapsuleShape2D_juc2q")
 
-[node name="area_13" type="Area2D" parent="right_radial_menu" groups=["M"]]
+[node name="area_13" type="Area2D" parent="right_radial_menu" groups=["O"]]
 collision_layer = 2
 collision_mask = 2
 
@@ -192,7 +192,7 @@ shape = SubResource("CircleShape2D_0jl8t")
 position = Vector2(422.055, 750)
 scale = Vector2(1.25, 1.25)
 
-[node name="area_1" type="Area2D" parent="left_radial_menu" groups=["Q"]]
+[node name="area_1" type="Area2D" parent="left_radial_menu" groups=["A"]]
 collision_layer = 2
 collision_mask = 2
 
@@ -203,7 +203,7 @@ position = Vector2(0, -223)
 rotation = 1.5708
 shape = SubResource("CapsuleShape2D_juc2q")
 
-[node name="area_2" type="Area2D" parent="left_radial_menu" groups=["W"]]
+[node name="area_2" type="Area2D" parent="left_radial_menu" groups=["B"]]
 collision_layer = 2
 collision_mask = 2
 
@@ -214,7 +214,7 @@ position = Vector2(104, -197)
 rotation = 2.04902
 shape = SubResource("CapsuleShape2D_juc2q")
 
-[node name="area_3" type="Area2D" parent="left_radial_menu" groups=["E"]]
+[node name="area_3" type="Area2D" parent="left_radial_menu" groups=["C"]]
 collision_layer = 2
 collision_mask = 2
 
@@ -225,7 +225,7 @@ position = Vector2(184, -127)
 rotation = -0.593412
 shape = SubResource("CapsuleShape2D_juc2q")
 
-[node name="area_4" type="Area2D" parent="left_radial_menu" groups=["R"]]
+[node name="area_4" type="Area2D" parent="left_radial_menu" groups=["D"]]
 collision_layer = 2
 collision_mask = 2
 
@@ -236,7 +236,7 @@ position = Vector2(221.5, -27)
 rotation = -0.10472
 shape = SubResource("CapsuleShape2D_juc2q")
 
-[node name="area_5" type="Area2D" parent="left_radial_menu" groups=["T"]]
+[node name="area_5" type="Area2D" parent="left_radial_menu" groups=["E"]]
 collision_layer = 2
 collision_mask = 2
 
@@ -247,7 +247,7 @@ position = Vector2(209, 78)
 rotation = 0.392699
 shape = SubResource("CapsuleShape2D_juc2q")
 
-[node name="area_6" type="Area2D" parent="left_radial_menu" groups=["Y"]]
+[node name="area_6" type="Area2D" parent="left_radial_menu" groups=["F"]]
 collision_layer = 2
 collision_mask = 2
 
@@ -258,7 +258,7 @@ position = Vector2(148, 167)
 rotation = 0.846485
 shape = SubResource("CapsuleShape2D_juc2q")
 
-[node name="area_7" type="Area2D" parent="left_radial_menu" groups=["A"]]
+[node name="area_7" type="Area2D" parent="left_radial_menu" groups=["G"]]
 collision_layer = 2
 collision_mask = 2
 
@@ -269,7 +269,7 @@ position = Vector2(54, 216.5)
 rotation = 1.3439
 shape = SubResource("CapsuleShape2D_juc2q")
 
-[node name="area_8" type="Area2D" parent="left_radial_menu" groups=["S"]]
+[node name="area_8" type="Area2D" parent="left_radial_menu" groups=["H"]]
 collision_layer = 2
 collision_mask = 2
 
@@ -280,7 +280,7 @@ position = Vector2(-52.5, 217)
 rotation = 1.81514
 shape = SubResource("CapsuleShape2D_juc2q")
 
-[node name="area_9" type="Area2D" parent="left_radial_menu" groups=["D"]]
+[node name="area_9" type="Area2D" parent="left_radial_menu" groups=["I"]]
 collision_layer = 2
 collision_mask = 2
 
@@ -291,7 +291,7 @@ position = Vector2(-148, 167)
 rotation = 2.27765
 shape = SubResource("CapsuleShape2D_juc2q")
 
-[node name="area_10" type="Area2D" parent="left_radial_menu" groups=["F"]]
+[node name="area_10" type="Area2D" parent="left_radial_menu" groups=["J"]]
 collision_layer = 2
 collision_mask = 2
 
@@ -301,7 +301,7 @@ position = Vector2(-207, 81)
 rotation = -0.331613
 shape = SubResource("CapsuleShape2D_juc2q")
 
-[node name="area_11" type="Area2D" parent="left_radial_menu" groups=["Z"]]
+[node name="area_11" type="Area2D" parent="left_radial_menu" groups=["K"]]
 collision_layer = 2
 collision_mask = 2
 
@@ -311,7 +311,7 @@ position = Vector2(-222, -27)
 rotation = 0.1309
 shape = SubResource("CapsuleShape2D_juc2q")
 
-[node name="area_12" type="Area2D" parent="left_radial_menu" groups=["X"]]
+[node name="area_12" type="Area2D" parent="left_radial_menu" groups=["L"]]
 collision_layer = 2
 collision_mask = 2
 
@@ -321,7 +321,7 @@ position = Vector2(-184, -126)
 rotation = 0.612611
 shape = SubResource("CapsuleShape2D_juc2q")
 
-[node name="area_13" type="Area2D" parent="left_radial_menu" groups=["C"]]
+[node name="area_13" type="Area2D" parent="left_radial_menu" groups=["M"]]
 collision_layer = 2
 collision_mask = 2
 

@@ -19,7 +19,7 @@
 
 [node name="right_radial_menu" type="Node2D"]
 
-[node name="Area2D" type="Area2D" parent="." groups=["U"]]
+[node name="Area2D" type="Area2D" parent="." groups=["N"]]
 collision_layer = 2
 collision_mask = 2
 
@@ -39,9 +39,9 @@ offset_left = -7.0
 offset_top = -186.0
 offset_right = 8.0
 offset_bottom = -163.0
-text = "U"
+text = "N"
 
-[node name="Area2D2" type="Area2D" parent="." groups=["I"]]
+[node name="Area2D2" type="Area2D" parent="." groups=["Z"]]
 collision_layer = 2
 collision_mask = 2
 
@@ -61,9 +61,9 @@ offset_left = 76.0
 offset_top = -169.0
 offset_right = 84.0
 offset_bottom = -146.0
-text = "I"
+text = "Z"
 
-[node name="Area2D3" type="Area2D" parent="." groups=["O"]]
+[node name="Area2D3" type="Area2D" parent="." groups=["Y"]]
 collision_layer = 2
 collision_mask = 2
 
@@ -83,9 +83,9 @@ offset_left = 133.0
 offset_top = -111.0
 offset_right = 149.0
 offset_bottom = -88.0
-text = "O"
+text = "Y"
 
-[node name="Area2D4" type="Area2D" parent="." groups=["P"]]
+[node name="Area2D4" type="Area2D" parent="." groups=["X"]]
 collision_layer = 2
 collision_mask = 2
 
@@ -105,9 +105,9 @@ offset_left = 165.0
 offset_top = -29.0
 offset_right = 180.0
 offset_bottom = -4.0
-text = "P"
+text = "X"
 
-[node name="Area2D5" type="Area2D" parent="." groups=["G"]]
+[node name="Area2D5" type="Area2D" parent="." groups=["W"]]
 collision_layer = 2
 collision_mask = 2
 
@@ -127,9 +127,9 @@ offset_left = 152.0
 offset_top = 48.0
 offset_right = 170.0
 offset_bottom = 73.0
-text = "G"
+text = "W"
 
-[node name="Area2D6" type="Area2D" parent="." groups=["H"]]
+[node name="Area2D6" type="Area2D" parent="." groups=["V"]]
 collision_layer = 2
 collision_mask = 2
 
@@ -149,9 +149,9 @@ offset_left = 109.0
 offset_top = 112.0
 offset_right = 126.0
 offset_bottom = 139.0
-text = "H"
+text = "V"
 
-[node name="Area2D7" type="Area2D" parent="." groups=["J"]]
+[node name="Area2D7" type="Area2D" parent="." groups=["U"]]
 collision_layer = 2
 collision_mask = 2
 
@@ -172,9 +172,9 @@ offset_left = 35.0
 offset_top = 151.0
 offset_right = 40.0
 offset_bottom = 179.0
-text = "J"
+text = "U"
 
-[node name="Area2D8" type="Area2D" parent="." groups=["K"]]
+[node name="Area2D8" type="Area2D" parent="." groups=["T"]]
 collision_layer = 2
 collision_mask = 2
 
@@ -194,9 +194,9 @@ offset_left = -41.0
 offset_top = 148.0
 offset_right = -25.0
 offset_bottom = 177.0
-text = "K"
+text = "T"
 
-[node name="Area2D9" type="Area2D" parent="." groups=["L"]]
+[node name="Area2D9" type="Area2D" parent="." groups=["S"]]
 collision_layer = 2
 collision_mask = 2
 
@@ -216,9 +216,9 @@ offset_left = -115.0
 offset_top = 115.0
 offset_right = -99.0
 offset_bottom = 142.0
-text = "L"
+text = "S"
 
-[node name="Area2D10" type="Area2D" parent="." groups=["V"]]
+[node name="Area2D10" type="Area2D" parent="." groups=["R"]]
 collision_layer = 2
 collision_mask = 2
 
@@ -238,9 +238,9 @@ offset_left = -161.0
 offset_top = 47.0
 offset_right = -145.0
 offset_bottom = 70.0
-text = "V"
+text = "R"
 
-[node name="Area2D11" type="Area2D" parent="." groups=["B"]]
+[node name="Area2D11" type="Area2D" parent="." groups=["Q"]]
 collision_layer = 2
 collision_mask = 2
 
@@ -260,9 +260,9 @@ offset_left = -179.0
 offset_top = -29.0
 offset_right = -162.0
 offset_bottom = -1.0
-text = "B"
+text = "Q"
 
-[node name="Area2D12" type="Area2D" parent="." groups=["N"]]
+[node name="Area2D12" type="Area2D" parent="." groups=["P"]]
 collision_layer = 2
 collision_mask = 2
 
@@ -282,9 +282,9 @@ offset_left = -149.0
 offset_top = -105.0
 offset_right = -130.0
 offset_bottom = -79.0
-text = "N"
+text = "P"
 
-[node name="Area2D13" type="Area2D" parent="." groups=["M"]]
+[node name="Area2D13" type="Area2D" parent="." groups=["O"]]
 collision_layer = 2
 collision_mask = 2
 
@@ -304,7 +304,7 @@ offset_left = -86.0
 offset_top = -162.0
 offset_right = -64.0
 offset_bottom = -137.0
-text = "M"
+text = "O"
 
 [node name="RadialMenuPart14" type="Sprite2D" parent="."]
 visible = false
