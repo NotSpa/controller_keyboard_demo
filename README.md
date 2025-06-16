@@ -17,6 +17,10 @@ or copy & paste the following into the filepath at the top:
 %AppData%\Godot\app_userdata\Controller Keyboard Demo\logs
 
 You can send the log files via Discord, studip or my uni mail.
+Or if you don't have my direct contact you can use this mail address:
+
+controller_keyboard_demo.canteen414@simplelogin.com
+
 If you have any other feedback you can send that as well with your log files.
 
 Thank you for participating
