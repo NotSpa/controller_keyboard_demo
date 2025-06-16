@@ -49,6 +49,10 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
 text = "Very good, you made it to the halfway point.
 Take a breath, stand up and walk around a little if you want.
+You can start the last half after a 10 minute timer runs out.
+The next trial will once again be the radial layout from the first trial.
+The button will stop beeing grayed out once you can start again.
+As per the last times be as precise as possible and as quick as you can.
 "
 
 [node name="ok" type="Button" parent="."]

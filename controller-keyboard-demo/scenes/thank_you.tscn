@@ -51,7 +51,7 @@ text = "Thank you very much for participating.
 Now you only need to send me the .log file.
 You can find the log file under:
 User -> (\"Your Name\") -> AppData -> Roaming -> Godot -> app_userdata -> Controller Keyboard Demo -> logs
-If you can't see the Appdata-Folder type %Appdata% into the filepath or press the windows key and type it there.
+If you can't see the Appdata-Folder type %appdata% into the filepath or press the windows key and type it there.
 You should only see one log file if you started this demo once.
 If you see multiple log files, send them all."
 

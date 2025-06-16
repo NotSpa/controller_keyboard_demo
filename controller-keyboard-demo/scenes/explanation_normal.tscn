@@ -54,7 +54,9 @@ To delete the last letter navigate to the DEL key or press the X button (Square 
 To type a space navigate to the Space key or press the Y button (Tringale on PS).
 After you finished typing a sentence navigate to the NEXT key or press the R2 button.
 You will have 4 minutes to type as many sentences as you can.
-Try and be as precise and accurate as possible."
+Try and be as precise and accurate as possible.
+You can start the next trial once the 2 minute timer ran pout and 
+the button isn't grayed out anymore."
 
 [node name="ok" type="Button" parent="."]
 layout_mode = 0
@@ -80,4 +82,8 @@ position = Vector2(1080, 904)
 scale = Vector2(0.05, 0.05)
 texture = ExtResource("2_pw6uq")
 
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
+
 [connection signal="pressed" from="ok" to="." method="_on_ok_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

@@ -48,9 +48,9 @@ offset_bottom = 832.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
 text = "Good Job, you are almost done.
-Now one last time.
-Take a breath before you start the last trial.
+Now one last time with the normal layout.
 Be as precise and quick as possible.
+You can start again after the 2 minute timer runs out.
 Once the button isn't grayed out anymore you can start the last trial."
 
 [node name="ok" type="Button" parent="."]
