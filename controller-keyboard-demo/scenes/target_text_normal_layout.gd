@@ -9,6 +9,7 @@ var count: int
 var time = Time
 
 @onready var id = get_node("/root/Id").id
+@onready var run = get_node("/root/Id").normalRun
 
 var type = "normal"
 
@@ -51,4 +52,4 @@ func _process(_delta: float) -> void:
 
 
 func _on_input_text_text_set() -> void:
-	prints(id, ";", type, ";", time.get_ticks_msec(), ";", $"../input_text".text, ";", $"../target_text".text)
+	prints(id, ";", type, ";", run, ";", time.get_ticks_msec(), ";", $"../input_text".text, ";", $"../target_text".text)

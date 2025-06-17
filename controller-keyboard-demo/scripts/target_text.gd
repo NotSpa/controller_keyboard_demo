@@ -9,6 +9,7 @@ var count: int
 var time = Time
 
 @onready var id = get_node("/root/Id").id
+@onready var run = get_node("/root/Id").radialRun
 
 var type = "radial"
 
@@ -52,4 +53,4 @@ func _process(_delta: float) -> void:
 
 func _on_input_text_text_set() -> void:
 	if ($"../left_radial_menu/left_stick_input_pointer".block_left || $"../right_radial_menu/right_stick_input_pointer".block_right):
-		prints(id, ";", type, ";", time.get_ticks_msec(), ";", $"../input_text".text, ";", $"../target_text".text)
+		prints(id, ";", type, ";", run, ";", time.get_ticks_msec(), ";", $"../input_text".text, ";", $"../target_text".text)
